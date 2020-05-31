@@ -13,6 +13,42 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function(){
+  return view('index');
+});
+
+Route::get('/quienes-somos', function(){
+  return view('about-us');
+})->name('about');
+
+Route::get('/sitios-cercanos', function(){
+  return view('near');
+})->name('near');
+
+Route::get('explorar-apartamentos/renders', function(){
+  $types = App\Type::all();
+  return view('explore.renders', ['page_title'=>'Explorar Apartamentos', 'types'=>$types]);
+})->name('explore.renders');
+
+Route::get('explorar-apartamentos/planos', function(){
+  $types = App\Type::all();
+  return view('explore.planes', ['page_title'=>'Explorar Apartamentos', 'types'=>$types]);
+})->name('explore.planes');
+
+Route::get('zonas-sociales', function(){
+  return view('explore.shared', ['page_title'=>'Zonas Sociales']);
+})->name('shared');
+
+Route::get('zonas-sociales-360', function(){
+  return view('360');
+});
+
+Route::get('separar-apartamento/seleccionar-apartamento', 'ApartmentController@selectApartment')->name('reserve.selectApartment');
+Route::get('separar-apartamento/seleccionar-piso', 'ApartmentController@selectFloor')->name('reserve.selectFloor');
+Route::get('separar-apartamento/{apartment}/detalle', 'ApartmentController@show')->name('apartments.show');
+Route::get('separar-apartamento/gracias', 'ApartmentController@thankyou')->name('apartments.thankyou');
+
+Route::get('tipos', function(){
+  return response()->json(['data'=>App\Type::all()]);
+  return App\Http\Resources\Type::collection( App\Type::all() );
 });

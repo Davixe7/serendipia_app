@@ -1,0 +1,155 @@
+#app {
+  font-family: 'Chivo', sans-serif;
+  background: #19191c;
+}
+
+.close-white {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%3E%3Cpath%20d%3D%22M1%201l18%2018m0-18L1%2019%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke%3D%22%23FFF%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.sidenav-toggler-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%3E%3Cpath%20d%3D%22M0%200h20v2H0zm0%209h20v2H0zm0%209h20v2H0z%22%20fill%3D%22%23FFF%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+}
+.arrow-right-white {
+  display: inline-block;
+  width: 18px;
+  height: 14px;
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2214%22%3E%3Cpath%20d%3D%22M.5%206.833h16M11.167%201.5L16.5%206.833l-5.333%205.334%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke%3D%22%23FFF%22%20stroke-width%3D%221.185%22%2F%3E%3C%2Fsvg%3E');
+}
+.arrow-right-green {
+  display: inline-block;
+  width: 18px;
+  height: 14px;
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2219%22%20height%3D%2213%22%3E%3Cpath%20d%3D%22M1%206.333h16M11.667%201L17%206.333l-5.333%205.334%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke%3D%22%2300C232%22%20stroke-width%3D%221.185%22%2F%3E%3C%2Fsvg%3E');
+}
+.arrow-left-white {
+  display: inline-block;
+  width: 18px;
+  height: 14px;
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2214%22%3E%3Cpath%20d%3D%22M17.5%206.833h-16M6.833%201.5L1.5%206.833l5.333%205.334%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke%3D%22%23FFF%22%20stroke-width%3D%221.185%22%20opacity%3D%22.2%22%2F%3E%3C%2Fsvg%3E');
+}
+/* BUTTONS*/
+.btn {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 0;
+}
+.btn-outline-default {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn-outline-success {
+  border: 1px solid #00C232;
+  color: #00C232;
+}
+
+hr {
+  border-width: 1px;
+  border-color: #474749;
+  margin: 24px 0;
+}
+
+/* MAIN */
+.address {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.14px;
+  color: #fff;
+}
+.address .detail {
+  font-weight: 300;
+}
+.address .detail:before {
+  content: '•';
+  font-size: .5em;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.btn.btn-reserve-yours {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f2f2f7;
+  background: #35b447;
+  padding: 9px 16px;
+  border-radius: 0;
+  border: none;
+}
+.picture-disclaimer {
+  display: inline-block;
+  font-size: 7px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #757577;
+}
+
+/* TABS NAV */
+.viewport-tabs-nav {
+  display: inline-flex;
+  border: 1px solid #fff;
+  width: fit-content;
+}
+.viewport-tabs-nav a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f2f2f7;
+  padding: 9px 16px;
+  cursor: pointer;
+}
+.viewport-tabs-nav a:focus, .viewport-tabs-nav a:active, .viewport-tabs-nav a:hover {
+  text-decoration: none;
+}
+.viewport-tabs-nav a.active {
+  background: #fff;
+  color: #19191c;
+}
+
+/* MEASURES */
+.measures {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 12px;
+  padding-right: 0;
+  color: #fff;
+}
+.measure-title {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 5px;
+}
+.measure {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 12px;
+  margin-right: 32px;
+}
+@media(min-width: 768px){
+  .measures {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .measure {
+    margin-right: 0;
+  }
+}

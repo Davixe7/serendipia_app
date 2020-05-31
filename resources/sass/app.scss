@@ -1,1 +1,12 @@
-//
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,400,700');
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import './main.scss';
+@import './navbar.scss';
+@import './sidenav.scss';
+@import './footer.scss';
+@import './viewport.scss';
+@import './seleccionar.scss';

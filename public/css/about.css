@@ -1,0 +1,284 @@
+#modal {
+  font-family: "Chivo", sans-serif;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  background: #19191c;
+}
+
+.modal-top, .modal-bottom {
+  background: #19191c;
+}
+
+.modal-top {
+  flex: 0 1 auto;
+}
+
+.modal-bottom {
+  flex: 0 1 auto;
+  padding: 25px 15px;
+}
+
+.viewport {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.viewport .carousel-item img {
+  height: 100%;
+}
+
+.viewport-item-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.71428em;
+  font-weight: 700;
+  position: absolute;
+  z-index: 900;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 30px 30px;
+}
+
+.viewport-item-title .btn-group {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.viewport-screen {
+  position: relative;
+  margin: 0 -15px;
+  background: rgba(255, 255, 255, 0.35);
+  overflow: auto;
+}
+
+.viewport-aside {
+  display: none;
+  flex-flow: column wrap;
+  justify-content: center;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  bottom: 0;
+}
+
+.viewport-aside .box {
+  padding: 24px 42px 24px 24px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px);
+  max-width: 270px;
+}
+
+.viewport-aside .list-title,
+#exampleModal .list-title {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.viewport-aside p,
+#exampleModal p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+}
+
+.viewport-aside ul,
+#exampleModal ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.viewport-aside ul li,
+#exampleModal ul li {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+}
+
+.measure {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+
+#exampleModal ul li, #exampleModal p, #exampleModal .list-title, #exampleModal .measure {
+  color: #19191c;
+}
+
+.slides-navigator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.slides-navigator .carousel-control-prev,
+.slides-navigator .carousel-control-next {
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .viewport {
+    padding: 0 40px;
+  }
+
+  .viewport .carousel-item img {
+    height: auto;
+    width: 100%;
+  }
+
+  .viewport-item-title {
+    font-size: 3.25em;
+    padding: 30px 80px 50px;
+  }
+
+  .viewport-item-title .btn-group {
+    display: none;
+  }
+
+  .viewport-aside {
+    display: flex;
+  }
+
+  .slides-navigator {
+    margin-bottom: 0;
+  }
+
+  .modal-bottom {
+    padding: 25px;
+  }
+}
+.modal-dialog {
+  margin: auto 24px;
+}
+
+.modal-header {
+  justify-content: flex-end;
+  padding: 0 0 24px 0;
+  background: none;
+}
+.modal-header i.material-icons {
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-content {
+  background: none;
+  border: none;
+}
+
+.modal-body {
+  font-family: "Chivo", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #19191c;
+  border-radius: 2px;
+  background: #f2f2f7;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+.modal-backdrop.show {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.btn-group {
+  border: 1px solid #fff;
+  border-radius: none;
+}
+
+.btn-group .btn.active {
+  background: #fff;
+  color: #19191c;
+}
+
+.btn-group .btn:last-child {
+  border-left: 1px solid #fff;
+}
+
+.content {
+  padding-top: 56px;
+}
+.content .row {
+  margin-bottom: 55px;
+}
+.content img {
+  max-width: 100%;
+}
+
+.banner-about {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f2f2f7;
+  padding: 32px 0;
+  background: #19191c;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #19191c;
+}
+
+p {
+  font-size: 16px;
+  color: #303030;
+}
+
+.quote {
+  position: relative;
+  max-width: 245px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.quote p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -1px;
+  color: #131415;
+  margin-bottom: 0;
+  z-index: 100;
+  position: relative;
+}
+
+.quote img {
+  position: absolute;
+  z-index: 99;
+}
+
+.quote .content {
+  position: relative;
+  padding: 16px;
+}
+
+.quote .title {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #19191c;
+  padding: 0 16px;
+}
+
+@media (min-width: 576px) {
+  .quote {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

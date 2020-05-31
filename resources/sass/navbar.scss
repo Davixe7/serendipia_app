@@ -1,0 +1,44 @@
+/* CUSTOM NAVBAR */
+.custom-navbar {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+.custom-navbar-brand {
+  font-size: 0;
+  margin-right: 10px;
+}
+.page-title {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f2f2f7;
+}
+.page-title:before {
+  content: '•';
+  font-size: .5em;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.sidenav-toggler {
+  color: #fff;        
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.custom-navbar .address,
+.custom-navbar .btn-reserve-yours {
+  display: none;
+}
+@media(min-width: 768px){
+  .custom-navbar {
+    padding: 23px 40px;
+  }
+  .custom-navbar .address,
+  .custom-navbar .btn-reserve-yours {
+    margin-right: 24px;
+    display: inline-block;
+  }
+}
