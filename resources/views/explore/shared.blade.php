@@ -6,12 +6,13 @@
       <span class="viewport-item-title">@{{ currentItem.name }}</span>
       <a href="#" class="btn-details" data-toggle="modal" data-target="#detail-modal">Detalle</a>
     </span>
-    <div class="viewport-screen" style="min-height: calc(100vh - 180px);">
+    <div class="viewport-screen">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <div v-for="(item,n) in items" :key="n" class="carousel-item" :class="{active: currentIndex == n+1}">
             <picture>
-              <img :src="`./img/aptos/areas/${currentItem.img}`" class="d-block w-100">
+              <source media="(min-width:768px)" :srcset="`./img/aptos/areas/${currentItem.img}`">
+              <img :src="`./img/aptos/areas/${currentItem.slug}@1x.jpg`" class="d-block">
             </picture>
           </div>
         </div>
@@ -67,7 +68,7 @@ Vue.component('shared-details-box', {
       <li v-for="included in item.included">@{{ included }}</li>
     </ul>
     
-    <a href="/zonas-sociales-360" target="_blank" class="btn btn-outline-default">Explorar en 360°</a>
+    <a :href="'/zonas-sociales-360/?startscene=' + item.scene" target="_blank" class="btn btn-outline-default">Explorar en 360°</a>
   </div>
   `
 })
@@ -76,32 +77,50 @@ const app = new Vue({
   el: '#app',
   data(){return{
     items: [
-      {
-        "name"        : "Co-working",
-        "description" : "En nuestro coworking podrás disfrutar de un espacio donde la creatividad y la productividad son los mejores aliados.",
-        "location"    : "Piso 1",
-        "freeHeight"  : "3,50 m",
-        "img"         : "coworking.png",
-        "included"    : [
-          "Escritorios", "Televisor", "Sillas", "Ambientación del lugar"
-        ]
-      },
-      {
+        {
+        "scene" : "scene_juegos",
         "name"        : "Salón de juegos",
         "description" : "¿Una partida de ping-pong? O ¿Que tal un torneo de futbolito? Nuestro salón de juegos cuenta con una amplia variedad de juegos que podrás disfrutar en cualquier momento del día. Invita a tus amigos y comparte momentos inolvidables que harán tus días más divertidos.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
         "img"         : "salonjuego.png",
+        "slug"        : "salonjuego",
         "included"    : [
           "Mobiliario", "Mesa de billar", "Futbolito", "Columpio", "Televisor", "Ambientación del lugar", "Mesa de ping-pong"
         ]
       },
       {
-        "name"        : "Cooking Loungue Terraza",
+        "scene"       : "scene_coworking",
+        "name"        : "Coworking",
+        "description" : "En nuestro coworking podrás disfrutar de un espacio donde la creatividad y la productividad son los mejores aliados.",
+        "location"    : "Piso 1",
+        "freeHeight"  : "3,50 m",
+        "img"         : "coworking.png",
+        "slug"        : "coworking",
+        "included"    : [
+          "Escritorios", "Televisor", "Sillas", "Ambientación del lugar"
+        ]
+      },
+      {
+        "scene"       : "scene_terraza_lounge",
+        "name"        : "Terraza Loungue",
+        "description" : "¿Cansado de los planes de siempre? Nuestro Cooking lounge es perfecto para salir de la rutina. Tendrás la posibilidad de preparar deliciosos platos y sorprender a tus invitados mientras disfrutan de un poco de aire libre. Suena bien, ¿no?",
+        "location"    : "Piso 1",
+        "freeHeight"  : "3,50 m",
+        "img"         : "terrazalounge.png",
+        "slug"        : "terrazalounge",
+        "included"    : [
+          "Cocina dotada", "Mobiliario", "Ambientación del lugar"
+        ]
+      },
+      {
+        "scene"       : "scene_terraza_comunal",
+        "name"        : "Terraza Comunal",
         "description" : "¿Cansado de los planes de siempre? Nuestro Cooking lounge es perfecto para salir de la rutina. Tendrás la posibilidad de preparar deliciosos platos y sorprender a tus invitados mientras disfrutan de un poco de aire libre. Suena bien, ¿no?",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
         "img"         : "terraza.png",
+        "slug"        : "terraza",
         "included"    : [
           "Cocina dotada", "Mobiliario", "Ambientación del lugar"
         ]

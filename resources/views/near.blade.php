@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
     <title>Sitios cercanos | Serendipia</title>
+    <link rel="icon" href="/img/icons/favicon.svg">
     <script src="{{ asset('js/app.js') }}"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -200,7 +201,9 @@
                   <a href="#"><img src="/img/logos/logo-accion-fiduciaria.png" alt=""></a>
                 </div>
                 <div class="footer-logo-wrap whatsapp">
-                  <a href="#"><img src="/img/whatsapp.png" alt=""></a>
+                  <a style="color: #fff;" href="https://api.whatsapp.com/send?phone=+573174857023&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia.">
+                    <img src="/img/whatsapp.png" alt="">
+                  </a>
                 </div>
               </div>
               

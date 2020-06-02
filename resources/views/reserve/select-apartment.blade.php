@@ -4,7 +4,7 @@
   <div class="d-sm-none d-flex align-items-center py-4">
     <span class="floor-title">
       <span class="arrow-back-green"></span>
-      Piso 8
+      Piso {{ $floor }}
     </span>
     <button class="btn btn-outline-default btn-sm ml-auto" @click="selectByImage = !selectByImage">
       @{{ selectByImage ? 'Volver a lista' : 'Ver imagen' }}
@@ -67,7 +67,7 @@
               <span v-else class="floor-available">No disponible</span>
             </div>
             <span v-if="apt.available" class="action">
-              <span class="arrow arrow-right-green"></span>
+              <a :href="`/separar-apartamento/${apt.id}/detalle`" class="arrow arrow-right-green"></a>
               <a :href="`/separar-apartamento/${apt.id}/detalle`" class="btn btn-outline-success align-items-center">
                 <div>Ver detalles</div>
                 <span class="ml-3 arrow-right-green"></span>

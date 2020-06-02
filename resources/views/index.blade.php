@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>{{ config('app.name', 'Laravel') }}</title>
+  <link rel="icon" href="/img/icons/favicon.svg">
   <script src="{{ asset('js/app.js') }}" defer></script>
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Chivo:300,400,700" rel="stylesheet">
@@ -27,97 +28,7 @@
     </div>
     
     <section id="carousel">
-      <div id="indexCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#indexCarousel" data-slide-to="0" class="active">01</li>
-          <li data-target="#indexCarousel" data-slide-to="1" class="">02</li>
-          <li data-target="#indexCarousel" data-slide-to="2" class="">03</li>
-          <li data-target="#indexCarousel" data-slide-to="3" class="">04</li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-md-100" src="/img/building.jpg" alt="First slide">
-            <div class="carousel-caption">
-              <div>
-                <h5>Mi lugar favorito es <span class="modal-toggler" data-toggle="modal" data-target="#exampleModal">Serendipia</span></h5>
-                <p>Llega a Bogotá la oportunidad de tener apartamentos de calidad con todo lo que necesitas, en zonas exclusivas y al mejor precio.</p>
-                <div class="actions">
-                  <a href="#" class="btn btn-outline mr-2">
-                    <span class="play-icon mr-1"></span>
-                    Ver video
-                  </a>
-                  <a href="{{ route('reserve.selectFloor') }}" class="btn btn-success">Separa el tuyo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <picture>
-              <source media="(min-width:1366px)" srcset="/img/slide-apto-07@3x.jpg">
-              <source media="(min-width:480px)" srcset="/img/slide-apto-07@2x.jpg">
-              <img class="d-block w-md-100" src="/img/slide-apto-07@1x.jpg" alt="First slide">
-            </picture>
-            <div class="carousel-caption">
-              <div>
-                <h5>Mi lugar favorito es <span class="modal-toggler" data-toggle="modal" data-target="#exampleModal">Serendipia</span></h5>
-                <p>Llega a Bogotá la oportunidad de tener apartamentos de calidad con todo lo que necesitas, en zonas exclusivas y al mejor precio.</p>
-                <div class="actions">
-                  <a href="#" class="btn btn-outline d-inline-flex align-items-center mr-2">
-                    <span class="play-icon mr-1"></span>
-                    Ver video
-                  </a>
-                  <a href="{{ route('reserve.selectFloor') }}" class="btn btn-success">Separa el tuyo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <picture>
-              <source media="(min-width:1366px)" srcset="/img/aptos/slides/slide-apto-06@3x.jpg">
-              <source media="(min-width:480px)" srcset="/img/aptos/slides/slide-apto-06@2x.jpg">
-              <img class="d-block w-md-100" src="/img/aptos/slides/slide-apto-06@1x" alt="First slide">
-            </picture>
-            <div class="carousel-caption">
-              <div>
-                <h5>Mi lugar favorito es <span class="modal-toggler" data-toggle="modal" data-target="#exampleModal">Serendipia</span></h5>
-                <p>Llega a Bogotá la oportunidad de tener apartamentos de calidad con todo lo que necesitas, en zonas exclusivas y al mejor precio.</p>
-                <div class="actions">
-                  <a href="#" class="btn btn-outline d-inline-flex align-items-center mr-2">
-                    <span class="play-icon mr-1"></span>
-                    Ver video
-                  </a>
-                  <a href="{{ route('reserve.selectFloor') }}" class="btn btn-success">Separa el tuyo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <picture>
-              <source media="(min-width:1366px)" srcset="/img/slide-apto-07@3x.jpg">
-              <source media="(min-width:480px)" srcset="/img/slide-apto-07@2x.jpg">
-              <img class="d-block w-md-100" src="/img/slide-apto-07@1x.jpg" alt="First slide">
-            </picture>
-            <div class="carousel-caption">
-              <div>
-                <h5>Mi lugar favorito es <span class="modal-toggler" data-toggle="modal" data-target="#exampleModal">Serendipia</span></h5>
-                <p>Llega a Bogotá la oportunidad de tener apartamentos de calidad con todo lo que necesitas, en zonas exclusivas y al mejor precio.</p>
-                <div class="actions">
-                  <a href="#" class="btn btn-outline d-inline-flex align-items-center mr-2">
-                    <span class="play-icon mr-1"></span>
-                    Ver video
-                  </a>
-                  <a href="{{ route('reserve.selectFloor') }}" class="btn btn-success">Separa el tuyo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-arrow-down">
-          <a href="#feature-1" class="down-scroller">
-            <span class="arrow-down-icon"></span>
-          </a>
-        </div>
-      </div>
+      @include('partials.home-carousel')
     </section>
     
     <div class="container main">

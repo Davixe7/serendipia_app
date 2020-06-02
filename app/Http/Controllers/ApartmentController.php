@@ -8,37 +8,6 @@ use Illuminate\Http\Request;
 class ApartmentController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  \App\Apartment  $apartment
@@ -48,43 +17,9 @@ class ApartmentController extends Controller
     {
       return view('reserve.show',
       [
-        'page_title' => 'Seleccionar Apartamento',
+        'page_title' => 'Separa el Tuyo',
         'apartment' => $apartment->load('type'),
       ]);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Apartment  $apartment
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Apartment $apartment)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Apartment  $apartment
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Apartment $apartment)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Apartment  $apartment
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Apartment $apartment)
-    {
-        //
     }
     
     public function selectFloor(){
@@ -103,7 +38,7 @@ class ApartmentController extends Controller
       return view('reserve.select-floor',
       [
         'floors' => $floors->sortBy('floor')->values(),
-        'page_title' => 'Separa tu Apartamento'
+        'page_title' => 'Separa el Tuyo'
       ]);
     }
     
@@ -114,9 +49,14 @@ class ApartmentController extends Controller
       $apartments = Apartment::whereFloor($request->floor)->with('type')->get();
       return view('reserve.select-apartment',
       [
-        'page_title' => 'Seleccionar Apartamento',
+        'page_title' => 'Separa el Tuyo',
         'apartments' => $apartments,
         'floor'      => $request->floor
       ]);
+    }
+    
+    public function getByLocation(Request $request){
+      $apt = Apartment::whereFloor( $request->floor )->whereTypeId( $request->type )->first();
+      return redirect()->route('apartments.show', ['apartment'=>$apt->id]);
     }
 }

@@ -43,6 +43,7 @@ Route::get('zonas-sociales-360', function(){
   return view('360');
 });
 
+Route::get('detalle-apartamento','ApartmentController@getByLocation');
 Route::get('separar-apartamento/seleccionar-apartamento', 'ApartmentController@selectApartment')->name('reserve.selectApartment');
 Route::get('separar-apartamento/seleccionar-piso', 'ApartmentController@selectFloor')->name('reserve.selectFloor');
 Route::get('separar-apartamento/{apartment}/detalle', 'ApartmentController@show')->name('apartments.show');

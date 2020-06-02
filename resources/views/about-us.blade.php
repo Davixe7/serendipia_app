@@ -4,11 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
     <title>Quiénes somos | Serendipia</title>
+    <link rel="icon" href="/img/icons/favicon.svg">
     <script src="{{ asset('js/app.js') }}" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/about.css') }}" rel="stylesheet">
+    <style>
+      .picture-disclaimer {
+        display: block;
+        font-size: 8px;
+        color: #19191c;
+        text-align: center;
+        opacity: .4;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
@@ -100,7 +110,7 @@
                 </p>
               </div>
             </div>
-            <div class="row">
+            <div class="row mb-0">
               <div class="col-md-8 mx-auto">
                 <div class="ad-banner">
                   <div class="row align-items-center">
@@ -122,6 +132,10 @@
                   <img src="/img/lock.png" alt="" class="mr-2">
                   <span class="mr-3">Tus pagos están protegidos con</span>
                   <img src="/img/logos/logo-payu.png" alt="">
+                </div>
+                
+                <div class="picture-disclaimer">
+                  Las imágenes acá contenidas son una representación gráfica del diseñador y están sujetas a cambio en cuanto a diseño, acabados o materiales por disposición del grupo constructor o la curaduría correspondiente.
                 </div>
               </div>
             </div>

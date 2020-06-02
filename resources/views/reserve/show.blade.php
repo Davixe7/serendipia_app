@@ -11,8 +11,8 @@
     </button>
   </div>
   <div class="row">
-    <div class="col-md-6">
-      <img src="/img/aptos/separar/APTO_1.png" alt="" style="max-width: 100%;">
+    <div class="col-md-6 apartment-detail-plane">
+      <img src="/img/aptos/separar/APTO_{{$apartment->type->id}}.png" alt="" style="max-width: 100%;">
     </div>
     <div class="col-md-6">
       <div class="floors-list-header">
@@ -20,7 +20,7 @@
           <a href="{{ route('reserve.selectApartment', ['floor'=>$apartment->floor]) }}">
             <span class="arrow-back-green"></span>
           </a>
-          <span>Apartamento 802</span>
+          <span>Apartamento {{$apartment->number}}</span>
         </span>
         <button class="btn btn-outline-success btn-sm ml-auto" data-toggle="modal" data-target="#detail-modal">
           Plano detallado

@@ -24,6 +24,7 @@ a:hover .hover-path {
 
 .reserve-container {
   padding: 0 24px;
+  min-height: calc(100vh - 170px);
 }
 @media(min-width: 768px){
   .reserve-container { padding: 40px; }
@@ -202,6 +203,10 @@ a:hover .hover-path {
 }
 
 #reserve-yours-final {
+  .apartment-detail-plane {
+    background: #fff;
+    text-align: center;
+  }
   .apartment-measures {
     display: flex;
     flex-flow: row wrap;

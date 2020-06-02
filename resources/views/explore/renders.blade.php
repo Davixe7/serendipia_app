@@ -19,8 +19,10 @@
         <div class="carousel-inner">
           <div v-for="n in 3" :key="n" class="carousel-item" :class="{active: currentIndex == n}">
             <picture>
+              <source media="(min-width: 1366px)" :srcset="`/img/aptos/renders/${currentItem.imgx3}`">
               <source media="(min-width: 768px)" :srcset="`/img/aptos/renders/${currentItem.imgx2}`">
-              <img :src="`/img/aptos/renders/${currentItem.imgx1}`">
+              <source media="(min-width: 480px)" :srcset="`/img/aptos/renders/${currentItem.imgx1_5}`">
+              <img :src="`/img/aptos/renders/${currentItem.imgx1}`" class="w-md-100">
             </picture>
           </div>
         </div>
@@ -93,21 +95,24 @@ const app = new Vue({
     items: [
       {
         name: 'Fachada',
-        imgx1: 'fachada.jpg',
-        imgx2: 'fachada@1366.jpg',
-        imgx3: 'fachada@1440.jpg',
+        imgx1: 'fachada@1x.jpg',
+        imgx2: 'fachada@2x.jpg',
+        imgx3: 'fachada@3x.png',
+        imgx1_5: 'fachada@1.5x.jpg',
       },
       {
         name: 'Apartamento',
-        imgx1: 'apartamento02.jpg',
-        imgx2: 'apartamento02.jpg',
-        imgx3: 'apartamento02.jpg',
+        imgx1: 'apartamento02@1x.jpg',
+        imgx2: 'apartamento02@2x.jpg',
+        imgx3: 'apartamento02@3x.jpg',
+        imgx1_5: 'apartamento0@1.5x.jpg',
       },
       {
         name: 'Apartamento',
-        imgx1: 'apartamento.jpg',
-        imgx2: 'apartamento.jpg',
-        imgx3: 'apartamento.jpg',
+        imgx1: 'apartamento01-center@1x.jpg',
+        imgx2: 'apartamento01-center@2x.jpg',
+        imgx3: 'apartamento01-center@3x.jpg',
+        imgx1_5: 'apartamento01-center@1.5x.jpg',
       }
     ]
   }},

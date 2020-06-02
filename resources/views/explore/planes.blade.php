@@ -74,6 +74,12 @@
 Vue.component('planes-details-box', {
   props: ['type'],
   methods:{
+    closeDetailModal(){
+      jQuery('#detail-modal').modal('hide')
+    },
+    detailUrl(floor, type){
+      return '/detalle-apartamento/?floor=' + `${floor+1}&type=${type}`
+    },
     onFloor(floor){
       if(this.type.available_in){
         return this.type.available_in.includes(floor)
@@ -96,15 +102,19 @@ Vue.component('planes-details-box', {
         <span class="measure">@{{ type.free_height }} m<sup>2</sup></span>
       </span>
     </div>
-    <button class="btn btn-outline-default" data-toggle="modal" data-target="#plane-modal">Ver plano detallado</button>
+    <button class="btn btn-outline-default" data-toggle="modal" data-target="#plane-modal" @click="closeDetailModal">
+      Ver plano detallado
+    </button>
     <hr>
     <span class="measure-title">Disponible en:</span>
     <div class="viewport-floors-list">
       <div v-for="n in 6" :class="{disabled: !onFloor(n+1) }">
-        <div class="measure">
-          Piso 0@{{n+1}} &nbsp;
-          <span class="arrow-right-green"></span>
-        </div>
+        <a :href="detailUrl(n,type.id)">
+          <div class="measure">
+            Piso 0@{{n+1}} &nbsp;
+            <span class="arrow-right-green"></span>
+          </div>
+        </a>
       </div>
     </div>
   </div>

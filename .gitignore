@@ -1,5 +1,6 @@
 /node_modules
 /public/hot
+/public/360
 /public/img/aptos
 /public/storage
 /storage/*.key
