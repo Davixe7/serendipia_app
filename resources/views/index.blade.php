@@ -49,13 +49,18 @@
       <section class="feature" id="feature-2">
         <div class="row flex-md-row-reverse">
           <div class="col-md-1 d-none d-sm-block "></div>
-          <div class="col-md-6">
+          <div class="col-md-6" style="position: relative;">
             <picture>
               <source media="(min-width:1366px)" srcset="/img/home/home-zonas-sociales@3x.jpg">
               <source media="(min-width:576px)" srcset="/img/home/home-zonas-sociales@2x.jpg">
               <img src="/img/home/home-zonas-sociales.jpg" alt="" style="width: 100%;">
             </picture>
-            <span class="picture-placeholder d-none"></span>
+            <a
+              href="/zonas-sociales-360"
+              style="display: inline-block; position: absolute; bottom: 20px; right: 40px; border: 1px solid #fff;"
+              class="btn btn-outline-default">
+              Explorar en 360°
+            </a>
           </div>
           <div class="col-md-4">
             <h2>Zonas sociales pensadas para que no te falte nada y tengas una vida productiva</h2>
