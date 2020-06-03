@@ -19,7 +19,7 @@ class CreateApartmentsTable extends Migration
             $table->boolean('available')->default(true);
             $table->unsignedInteger('number')->unique();
             $table->unsignedInteger('floor');
-            $table->unsignedInteger('type');
+            $table->unsignedInteger('type_id');
             $table->integer('apt_value');
             $table->integer('finance_value')->default(0);
             $table->float('initial_quota',3,1)->default(0);
