@@ -145,7 +145,7 @@
         </div>
       </div>
       <div class="modal-footer d-flex align-items-center justify-content-end">
-        <a href="#" class="btn btn-success">Continuar a PSE</a>
+        <a href="/separar-apartamento/gracias" class="btn btn-success">Continuar a PSE</a>
       </div>
     </div>
   </div>

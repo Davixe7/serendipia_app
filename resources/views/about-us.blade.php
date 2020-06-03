@@ -18,6 +18,28 @@
         text-align: center;
         opacity: .4;
       }
+      .features {
+        padding-top: 16px;
+      }
+      .feature {
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #303030;
+        display: flex;
+        align-items: top;
+        margin-bottom: 32px;
+      }
+      .feature img {
+        display: inline-block;
+        margin-right: 15px;
+      }
+      .feature span {
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
@@ -76,7 +98,7 @@
             </div>
             <div class="row">
               <div class="col-md-10 offset-md-2">
-                <img src="/img/group-17.jpg" alt="">
+                <img src="/img/quienes-somos01.jpg" alt="">
               </div>
             </div>
             <div class="row">
@@ -105,9 +127,32 @@
             <div class="row">
               <div class="col-md-6 offset-md-3">
                 <h2>¿Por qué invertir en Serendipia?</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae purus sagittis, bibendum lorem volutpat, ornare justo. Cras eget urna quis augue efficitur laoreet non non dui. Mauris vitae congue justo. Integer sit amet finibus ex, sed mattis purus. Duis dapibus eleifend urna ac gravida. Nulla facilisi. Nunc eget gravida leo. Curabitur dignissim felis sem, eget laoreet arcu tempus quis. Sed vestibulum ante in tincidunt congue. Praesent at mauris pretium, venenatis ante sit amet, varius enim. Fusce non leo ornare nulla placerat gravida ac vel quam. Donec venenatis egestas leo vel ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce interdum massa quis velit aliquam, vitae viverra sem viverra. Maecenas et ligula eu diam scelerisque varius vel vitae felis. Duis sed dignissim magna, in vestibulum nulla. Sed gravida auctor eros et molestie. Morbi dapibus, eros et convallis placerat, lacus quam mollis ipsum, a lacinia lacus nunc a urna. Pellentesque nec tortor in neque venenatis scelerisque eu a nulla. Cras ut volutpat ante, eu egestas magna. Duis placerat commodo porta. Maecenas commodo eget nulla et blandit. Etiam vitae cursus diam, et dapibus ante.
-                </p>
+                <div class="row features">
+                  <div class="col-lg-6 feature">
+                    <img src="/img/icons/pin.svg" alt="">
+                    <span>Ubicación estratégica:<br><b>Chapinero Alto</b></span>
+                  </div>
+                  <div class="col-lg-6 feature">
+                    <img src="/img/icons/key.svg" alt="">
+                    <span><b>Réntalo en plataformas digitales</b> por estancias cortas</span>
+                  </div>
+                  <div class="col-lg-6 feature">
+                    <img src="/img/icons/sofa.svg" alt="">
+                    <span>Lo entregamos <b>listo para vivir o arrendar</b></span>
+                  </div>
+                  <div class="col-lg-6 feature">
+                    <img src="/img/icons/idea.svg" alt="">
+                    <span>Edificio automatizado: <b>costos de administración reducidos</b></span>
+                  </div>
+                  <div class="col-lg-6 feature">
+                    <img src="/img/icons/money.svg" alt="">
+                    <span<b>Precio competitivo</b> en el mercado</span>
+                  </div>
+                  <div class="col-lg-6 feature">
+                    <img src="/img/icons/laundry.svg" alt="">
+                    <span>Variedad de <b>zonas sociales completamente dotadas</b></span>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="row mb-0">
@@ -131,7 +176,7 @@
                 <div class="secure-payment-advice">
                   <img src="/img/lock.png" alt="" class="mr-2">
                   <span class="mr-3">Tus pagos están protegidos con</span>
-                  <img src="/img/logos/logo-payu.png" alt="">
+                  <img src="/img/logos/logo-pse-blue.png" alt="">
                 </div>
                 
                 <div class="picture-disclaimer">
@@ -141,7 +186,9 @@
             </div>
           </div>
         </div>
-          
+        
+        <!-- FOOTER -->
+        
         <footer style="background: #19191c; padding: 20px 40px;">
           <div class="container-fluid">
             <div class="row">
