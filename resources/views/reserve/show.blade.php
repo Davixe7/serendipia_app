@@ -3,7 +3,9 @@
 <div id="reserve-yours-final" class="reserve-container">
   <div class="d-sm-none d-flex py-3 align-items-center">
     <span class="floor-title">
-      <span class="arrow-back-green"></span>
+      <a href="{{ route('reserve.selectApartment', ['floor'=>$apartment->floor]) }}">
+        <span class="arrow-back-green"></span>
+      </a>
       Apartamento {{$apartment->number}}
     </span>
     <button class="btn btn-outline-success btn-sm ml-auto" data-toggle="modal" data-target="#detail-modal">
@@ -118,7 +120,7 @@
 
 <!-- Modal Plano-->
 <div class="modal fade" id="detail-modal" tabindex="-1" role="dialog" aria-labelledby="plane-modalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content" style="background: none;">
       <div class="modal-header">
         <span class="ml-auto close-white" data-dismiss="modal"></span>
@@ -134,9 +136,6 @@
 <div class="modal fade" id="terminos-modal" tabindex="-1" role="dialog" aria-labelledby="plane-modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content" style="background: none;">
-      <div class="modal-header">
-        <span class="ml-auto close-white" data-dismiss="modal"></span>
-      </div>
       <div class="modal-body" style="background: #f2f2f7;">
         <h4>Términos y condiciones</h4>
         <div class="modal-text">

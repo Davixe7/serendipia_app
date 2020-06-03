@@ -75,7 +75,7 @@
           
           <div class="d-sm-none py-3 text-center">
             <div class="btn-group">
-              <a href="/ubicacion" class="btn btn-default active">Sitios de interés</a>
+              <a href="/sitios-cercanos" class="btn btn-default active">Sitios de interés</a>
               <a href="/mapa" class="btn btn-default">Mapa</a>
             </div>
           </div>
@@ -152,7 +152,7 @@
                 </picture>
                 <div class="content" onclick="window.location.href='/get-360/?startscene=scene_location'">
                   <span class="title">Vista aérea</span>
-                  <span class="icon play-icon"></span>
+                  <span class="icon zoom-icon"></span>
                 </div>
               </div>
             </div>
@@ -198,7 +198,7 @@
               
               <div class="d-none d-sm-block col-sm-3 pl-0">
                 <div class="btn-group">
-                  <a href="/ubicacion" class="btn btn-default active">Sitios de interés</a>
+                  <a href="/sitios-cercanos" class="btn btn-default active">Sitios de interés</a>
                   <a href="/mapa" class="btn btn-default">Mapa</a>
                 </div>
               </div>

@@ -100,7 +100,7 @@
               
               <div class="d-none d-sm-block col-sm-3 pl-0">
                 <div class="btn-group">
-                  <a href="/ubicacion" class="btn btn-default">Sitios de interés</a>
+                  <a href="/sitios-cercanos" class="btn btn-default">Sitios de interés</a>
                   <a href="/mapa" class="btn btn-default active">Mapa</a>
                 </div>
               </div>

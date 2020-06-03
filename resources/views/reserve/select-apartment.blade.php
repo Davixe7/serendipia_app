@@ -3,11 +3,11 @@
 <div id="reserve-yours-apt" class="reserve-container">
   <div class="d-sm-none d-flex align-items-center py-4">
     <span class="floor-title">
-      <span class="arrow-back-green"></span>
+      <a href="{{ route('reserve.selectFloor') }}"><span class="arrow-back-green"></span></a>
       Piso {{ $floor }}
     </span>
     <button class="btn btn-outline-default btn-sm ml-auto" @click="selectByImage = !selectByImage">
-      @{{ selectByImage ? 'Volver a lista' : 'Ver imagen' }}
+      @{{ selectByImage ? 'Ver lista' : 'Ver imagen' }}
     </button>
   </div>
   
@@ -35,7 +35,7 @@
           <use xlink:href="#photo"/>
           <a v-for="(apt,n) in apartments"
              :id="`apt${n}`"
-             :xlink:href="`/seleccionar-apartamento/${apt.id}/detalles`"
+             :xlink:href="`/seleccionar-apartamento/${apt.id}/detalle`"
              :class="{active:activeApt == n, disabled:!apt.available}"
              @mouseover="activeApt = n">
             <title>Apartamento @{{apt.number}}</title>
