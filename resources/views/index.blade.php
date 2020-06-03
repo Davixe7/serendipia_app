@@ -12,6 +12,21 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link href="{{ asset('css/main.css') }}" rel="stylesheet">
   <link href="{{ asset('css/index.css') }}" rel="stylesheet">
+  <style>
+    .btn-explore-360 {
+      display: inline-block;
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      border: 1px solid #fff;
+      white-space: nowrap;
+    }
+    @media(min-width: 768px){
+      .btn-explore-360 {
+        bottom: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="app">
@@ -57,8 +72,7 @@
             </picture>
             <a
               href="/zonas-sociales-360"
-              style="display: inline-block; position: absolute; bottom: 20px; right: 40px; border: 1px solid #fff;"
-              class="btn btn-outline-default">
+              class="btn btn-outline-default btn-explore-360">
               Explorar en 360°
             </a>
           </div>
