@@ -19,7 +19,7 @@
     @include('partials.sidenav')
     
     <div id="navbar" class="custom-navbar">
-      <a class="custom-navbar-brand index" href="index.html"><img src="/img/logos/logo-serendipia.svg" alt="logo serendipia"></a>
+      <a class="custom-navbar-brand index" href="/"><img src="/img/logos/logo-serendipia.svg" alt="logo serendipia"></a>
       <div class="ml-auto">
         <div class="sidenavToggler">
           <span class="sidenav-toggler-icon"></span>
@@ -50,7 +50,11 @@
         <div class="row flex-md-row-reverse">
           <div class="col-md-1 d-none d-sm-block "></div>
           <div class="col-md-6">
-            <img src="/img/render-home-02.jpg" alt="" style="width: 100%;">
+            <picture>
+              <source media="(min-width:1366px)" srcset="/img/home/home-zonas-sociales@3x.jpg">
+              <source media="(min-width:576px)" srcset="/img/home/home-zonas-sociales@2x.jpg">
+              <img src="/img/home/home-zonas-sociales.jpg" alt="" style="width: 100%;">
+            </picture>
             <span class="picture-placeholder d-none"></span>
           </div>
           <div class="col-md-4">
@@ -84,7 +88,7 @@
       <div class="d-none d-sm-flex secure-payment-advice">
         <img src="/img/lock.png" class="mr-2" alt="">
         <span class="mr-3">Tus pagos están protegidos con</span>
-        <img src="/img/logos/logo-payu.png" alt="">
+        <img src="/img/logos/logo-pse-blue.png" alt="">
       </div>
       
       <span class="text-center picture-disclaimer">Las imágenes acá contenidas son una representación gráfica del diseñador y están sujetas a cambio en cuanto a diseño, acabados o materiales por disposición del grupo constructor o la curaduría correspondiente.</span>
@@ -95,7 +99,7 @@
     
     <div class="container-fluid prefooter">
       <div class="row">
-        <div class="col-md-6 hover-box" style="background: url('/img/render-home-03.jpg');background-size: cover;">
+        <div class="col-md-6 hover-box" style="background: url('/img/home/home-sitios-cercanos.jpg');background-size: cover;">
           <div class="overlay"></div>
           <div class="content">
             <h2>Sitios cercanos</h2>
@@ -103,7 +107,7 @@
             <a href="{{ route('near') }}" class="btn btn-sm btn-outline">Ver sitios cercanos</a>
           </div>
         </div>
-        <div class="col-md-6 hover-box" style="background: url('/img/render-home-03.jpg');background-size: cover;">
+        <div class="col-md-6 hover-box" style="background: url('/img/home/home-quienes-somos.jpg');background-size: cover;">
           <div class="overlay"></div>
           <div class="content">
             <h2>¿Quiénes somos?</h2>
@@ -139,7 +143,7 @@
         </div>
         
         <div class="d-sm-none col-md-12 mb-4 text-center">
-          <span class="address"><span class="white">Chapinero</span> • Calle 62 #3 - 18 / 24</span>
+          <span class="address"><span class="white">Chapinero</span> Calle 62 #3 - 18 / 24</span>
         </div>
         
         <div class="col col-md-4 mx-auto footer-logos">
@@ -149,11 +153,11 @@
           </div>
           <div class="footer-logo-wrap">
             <span class="caption">Diseño por:</span>
-            <a href="#"><img src="/img/logos/logo-hma.svg" alt=""></a>
+            <a href="http://hmaproyectos.com/"><img src="/img/logos/logo-hma.svg" alt=""></a>
           </div>
           <div class="footer-logo-wrap">
             <span class="caption">Fiduciaria:</span>
-            <a href="#"><img src="/img/logos/logo-accion-fiduciaria.png" alt=""></a>
+            <a href="https://www.accion.com.co/"><img src="/img/logos/logo-accion-fiduciaria.png" alt=""></a>
           </div>
         </div>
       </div>

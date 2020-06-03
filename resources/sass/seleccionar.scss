@@ -203,6 +203,10 @@ a:hover .hover-path {
 }
 
 #reserve-yours-final {
+  background: url('/img/lines-2.svg');
+  background-size: 392px 740px;
+  background-position: top -200px;
+  background-repeat: no-repeat;
   .apartment-detail-plane {
     background: #fff;
     text-align: center;
@@ -269,25 +273,25 @@ a:hover .hover-path {
   }
   
   .cta-card {
-    background: #f2f2f7;
+    background: #35b447;
     padding: 15px;
     margin: 20px -24px -12px;
   }
   .cta-card .text {
     display: block;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 1.58;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.57;
     letter-spacing: normal;
-    color: #19191c;
+    color: #fff;
     margin-bottom: 10px;
   }
   .btn-checkout {
     font-size: 14px;
     font-weight: normal;
-    color: #f2f2f7;
+    color: #19191c;
     padding: 8px 14px;
-    background: #35b447;
+    background: #f2f2f7;
   }
   
   .hl:after {

@@ -2,15 +2,15 @@
   <div class="footer-logos">
     <div class="footer-logo">
       <div class="footer-logo-label">un proyecto de:</div>
-      <img src="/img/logos/logo-fores.png" alt="">
+      <a href="https://www.fores.com.co/"><img src="/img/logos/logo-fores.png" alt=""></a>
     </div>
     <div class="footer-logo">
       <div class="footer-logo-label">diseño por:</div>
-      <img src="/img/logos/logo-hma.svg" alt="">
+      <a href="http://hmaproyectos.com/"><img src="/img/logos/logo-hma.svg" alt=""></a>
     </div>
     <div class="footer-logo">
       <div class="footer-logo-label">fiduciaria:</div>
-      <img src="/img/logos/logo-accion-fiduciaria.png" alt="">
+      <a href="https://www.accion.com.co/"><img src="/img/logos/logo-accion-fiduciaria.png" alt=""></a>
     </div>
   </div>
   <span class="wa-me">

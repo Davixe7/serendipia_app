@@ -2,6 +2,8 @@
 /public/hot
 /public/360
 /public/img/aptos
+/public/img/home
+/public/img/near
 /public/storage
 /storage/*.key
 /vendor

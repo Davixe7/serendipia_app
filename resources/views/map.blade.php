@@ -75,122 +75,24 @@
           
           <div class="d-sm-none py-3 text-center">
             <div class="btn-group">
-              <a href="/ubicacion" class="btn btn-default active">Sitios de interés</a>
-              <a href="/mapa" class="btn btn-default">Mapa</a>
+              <a href="/sitios-cercanos" class="btn btn-default">Sitios de interés</a>
+              <a href="/mapa" class="btn btn-default active">Mapa</a>
             </div>
           </div>
         </div>
         
-        <div style="flex: 0 0 auto; padding: 0 40px;">
+        <div style="flex: 0 0 100%; padding: 0 40px 20px;">
           <div class="row h-100">
-            <div class="col-md-4">
-              <div class="near-item">
-                <picture>
-                  <source media="(min-width:1367px)" srcset="/img/near/naturaleza@2x.jpg">
-                  <img src="/img/near/naturaleza.jpg" alt="">
-                </picture>
-                <div class="content">
-                  <span class="title">Naturaleza</span>
-                  <ul class="list">
-                    <li>Parque Japón</li>
-                    <li>Parque de Los Hippies</li>
-                    <li>Quebrada La Vieja</li>
-                    <li>Parque Los Rosales</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="near-item modal-toggler">
-                <img src="/img/rectangle-mapa.jpg" alt="">
-                <div class="content" data-toggle="modal" data-target="#exampleModal">
-                  <span class="title">Mapa de Ubicación</span>
-                  <span class="icon zoom-icon"></span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="near-item">
-                <picture>
-                  <source media="(min-width:1367px)" srcset="/img/near/educacion@2x.jpg">
-                  <img src="/img/near/educacion.jpg" alt="">
-                </picture>
-                <div class="content">
-                  <span class="title">Educación</span>
-                  <ul class="list">
-                    <li>Universidad Manuela Beltrán</li>
-                    <li>Universidad Santo Tomás</li>
-                    <li>Pontificia Universidad Javeriana</li>
-                    <li>Universidad Piloto de Colombia</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="near-item">
-                <picture>
-                  <source media="(min-width:1367px)" srcset="/img/near/restaurantes@2x.jpg">
-                  <img src="/img/near/restaurantes.jpg" alt="">
-                </picture>
-                <div class="content">
-                  <span class="title">Restaurantes y cafés</span>
-                  <p>
-                    Ubicado junto a la Zona G de Bogotá, famosa por su gran variedad de opciones gastronómicas de todos los sabores y todos los precios.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="near-item modal-toggler">
-                <picture>
-                  <source media="(min-width:1367px)" srcset="/img/near/vistarea@2x.jpg">
-                  <img src="/img/near/vistarea.jpg" alt="">
-                </picture>
-                <div class="content" onclick="window.location.href='/get-360/?startscene=scene_location'">
-                  <span class="title">Vista aérea</span>
-                  <span class="icon play-icon"></span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="near-item">
-                <picture>
-                  <source media="(min-width:1367px)" srcset="/img/near/centros-interes@2x.jpg">
-                  <img src="/img/near/centros-interes.jpg" alt="">
-                </picture>
-                <div class="content">
-                  <span class="title">Centros de Interés</span>
-                  <ul class="list">
-                    <li>Carulla Calle 63 y D1</li>
-                    <li>Centro Comercial Avenida Chile</li>
-                    <li>Zona Financiera</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Modal -->
-          
-          <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <span class="close-white" class="close" data-dismiss="modal" aria-label="Close"></span>
-                </div>
-                <div class="modal-body">
-                  <img src="/img/mapa-modal.jpg" alt="#">
-                </div>
-              </div>
+            <div class="col">
+              <iframe src="/get-360/?startscene=scene_localization" width="100%" height="100%"
+                      style="min-height: calc(100vh - 180px);
+                             border:none;
+                             margin-bottom: 20px;"></iframe>
             </div>
           </div>
         </div>
           
+        <!-- Bottom -->
         <!-- Bottom -->
         <div class="modal-bottom">
           <div class="d-none d-sm-block container-fluid">
@@ -198,8 +100,8 @@
               
               <div class="d-none d-sm-block col-sm-3 pl-0">
                 <div class="btn-group">
-                  <a href="/ubicacion" class="btn btn-default active">Sitios de interés</a>
-                  <a href="/mapa" class="btn btn-default">Mapa</a>
+                  <a href="/ubicacion" class="btn btn-default">Sitios de interés</a>
+                  <a href="/mapa" class="btn btn-default active">Mapa</a>
                 </div>
               </div>
               

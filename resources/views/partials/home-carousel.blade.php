@@ -50,10 +50,10 @@
     </div>
     <div class="carousel-item">
       <picture>
-        <source media="(min-width:1366px)" srcset="/img/aptos/renders/apartamento01-right@3x.jpg">
-        <source media="(min-width:768px)" srcset="/img/aptos/renders/apartamento01-right@2x.jpg">
-        <source media="(min-width:480px)" srcset="/img/aptos/renders/apartamento01-right@1.5x.jpg">
-        <img class="d-block w-md-100" src="/img/aptos/renders/apartamento01-right@1x.jpg" alt="First slide">
+        <source media="(min-width:1366px)" srcset="/img/aptos/renders/coworking@3x.jpg">
+        <source media="(min-width:768px)" srcset="/img/aptos/renders/coworking@2x.jpg">
+        <source media="(min-width:480px)" srcset="/img/aptos/renders/coworking@1.5x.jpg">
+        <img class="d-block w-md-100" src="/img/aptos/renders/coworking@1x.jpg" alt="First slide">
       </picture>
       <div class="carousel-caption">
         <div>
@@ -71,10 +71,10 @@
     </div>
     <div class="carousel-item">
       <picture>
-        <source media="(min-width:1366px)" srcset="/img/aptos/renders/apartamento02@3x.jpg">
-        <source media="(min-width:768px)" srcset="/img/aptos/renders/apartamento02@2x.jpg">
-        <source media="(min-width:480px)" srcset="/img/aptos/renders/apartamento02@1.5x.jpg">
-        <img class="d-block w-md-100" src="/img/aptos/renders/apartamento02@1x.jpg" alt="First slide">
+        <source media="(min-width:1366px)" srcset="/img/aptos/renders/skylounge@3x.jpg">
+        <source media="(min-width:768px)" srcset="/img/aptos/renders/skylounge@2x.jpg">
+        <source media="(min-width:480px)" srcset="/img/aptos/renders/skylounge@1.5x.jpg">
+        <img class="d-block w-md-100" src="/img/aptos/renders/skylounge@1x.jpg" alt="First slide">
       </picture>
       <div class="carousel-caption">
         <div>

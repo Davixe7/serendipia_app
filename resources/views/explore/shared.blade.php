@@ -77,52 +77,52 @@ const app = new Vue({
   el: '#app',
   data(){return{
     items: [
-        {
-        "scene" : "scene_juegos",
-        "name"        : "Salón de juegos",
-        "description" : "¿Una partida de ping-pong? O ¿Que tal un torneo de futbolito? Nuestro salón de juegos cuenta con una amplia variedad de juegos que podrás disfrutar en cualquier momento del día. Invita a tus amigos y comparte momentos inolvidables que harán tus días más divertidos.",
-        "location"    : "Piso 1",
-        "freeHeight"  : "3,50 m",
-        "img"         : "salonjuego.png",
-        "slug"        : "salonjuego",
-        "included"    : [
-          "Mobiliario", "Mesa de billar", "Futbolito", "Columpio", "Televisor", "Ambientación del lugar", "Mesa de ping-pong"
-        ]
-      },
       {
         "scene"       : "scene_coworking",
         "name"        : "Coworking",
-        "description" : "En nuestro coworking podrás disfrutar de un espacio donde la creatividad y la productividad son los mejores aliados.",
+        "description" : "En nuestro co-working podrás disfrutar de un espacio donde la creatividad y la productividad son los mejores aliados.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
-        "img"         : "coworking.png",
+        "img"         : "coworking.jpg",
         "slug"        : "coworking",
         "included"    : [
-          "Escritorios", "Televisor", "Sillas", "Ambientación del lugar"
+          "Escritorios", "Sillas", "Ambientación del lugar"
+        ]
+      },
+        {
+        "scene" : "scene_juegos",
+        "name"        : "Salón de juegos",
+        "description" : "¿Una partida de ping-pong? ¿un torneo de futbolito? Nuestro salón de juegos cuenta con una variedad de juegos que podrás disfrutar en cualquier momento del día.",
+        "location"    : "Piso 1",
+        "freeHeight"  : "3,50 m",
+        "img"         : "salonjuego.jpg",
+        "slug"        : "salonjuego",
+        "included"    : [
+          "Televisor 50’’","Mesa Ping Pong","Mesa Futbolito","Mobiliario","Ambientación del lugar"
         ]
       },
       {
         "scene"       : "scene_terraza_lounge",
-        "name"        : "Terraza Loungue",
-        "description" : "¿Cansado de los planes de siempre? Nuestro Cooking lounge es perfecto para salir de la rutina. Tendrás la posibilidad de preparar deliciosos platos y sorprender a tus invitados mientras disfrutan de un poco de aire libre. Suena bien, ¿no?",
+        "name"        : "Sky Lounge",
+        "description" : "¿Cansado de los planes de siempre? Nuestro sky lounge es perfecto para salir de la rutina y tener una vista increíble de la ciudad. Celebra y disfruta con tus invitados en esta agradable zona.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
-        "img"         : "terrazalounge.png",
-        "slug"        : "terrazalounge",
+        "img"         : "skylounge.jpg",
+        "slug"        : "skylounge",
         "included"    : [
-          "Cocina dotada", "Mobiliario", "Ambientación del lugar"
+          "Mobiliario", "Ambientación del lugar"
         ]
       },
       {
         "scene"       : "scene_terraza_comunal",
-        "name"        : "Terraza Comunal",
-        "description" : "¿Cansado de los planes de siempre? Nuestro Cooking lounge es perfecto para salir de la rutina. Tendrás la posibilidad de preparar deliciosos platos y sorprender a tus invitados mientras disfrutan de un poco de aire libre. Suena bien, ¿no?",
+        "name"        : "Lavandería",
+        "description" : "Mantener la ropa limpia es difícil viviendo sólo, por eso decidimos facilitar el proceso con nuestra lavandería autoservicio, administrada por la empresa Lavanti, a un precio razonable.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
-        "img"         : "terraza.png",
-        "slug"        : "terraza",
+        "img"         : "lavanderia.jpg",
+        "slug"        : "lavanderia",
         "included"    : [
-          "Cocina dotada", "Mobiliario", "Ambientación del lugar"
+          "Máquinas de lavada y secado", "Mobiliario", "Ambientación del lugar"
         ]
       },
     ],

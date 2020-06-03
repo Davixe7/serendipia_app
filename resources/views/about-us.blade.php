@@ -181,11 +181,11 @@
                 </div>
                 <div class="footer-logo-wrap">
                   <span class="caption">Diseño por:</span>
-                  <a href="#"><img src="/img/logos/logo-hma.svg" alt=""></a>
+                  <a href="http://hmaproyectos.com/"><img src="/img/logos/logo-hma.svg" alt=""></a>
                 </div>
                 <div class="footer-logo-wrap">
                   <span class="caption">Fiduciaria:</span>
-                  <a href="#"><img src="/img/logos/logo-accion-fiduciaria.png" alt=""></a>
+                  <a href="https://www.accion.com.co/"><img src="/img/logos/logo-accion-fiduciaria.png" alt=""></a>
                 </div>
               </div>
             </div>

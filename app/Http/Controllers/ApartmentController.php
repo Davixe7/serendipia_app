@@ -59,4 +59,9 @@ class ApartmentController extends Controller
       $apt = Apartment::whereFloor( $request->floor )->whereTypeId( $request->type )->first();
       return redirect()->route('apartments.show', ['apartment'=>$apt->id]);
     }
+    
+    public function thankyou(Request $request){
+      $apartment = Apartment::first();
+      return view('reserve.thankyou', ['apartment'=>$apartment, 'page_title'=>'']);
+    }
 }

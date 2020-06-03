@@ -27,9 +27,10 @@
           </div>
         </div>
       </div>
+      <div class="bottom-shade"></div>
     </div>
-    <div class="viewport-details-box">
-      <renders-details-box v-if="currentItem" :currentItem="currentItem"/>
+    <div class="viewport-details-box" v-if="currentItem && currentItem.name != 'Fachada'">
+      <renders-details-box :currentItem="currentItem"/>
     </div>
   </div>
 </div>
@@ -76,12 +77,19 @@ Vue.component('renders-details-box', {
     
     <span class="measure-title">Mobiliario incluido:</span>
     <ul class="apartment-includes">
-      <li>1 Escritorio</li>
-      <li>Comedor de 2 puestos</li>
-      <li>Clóset</li>
-      <li>1 Cama</li>
-      <li>1 Baño completo</li>
+      <li>Horno extractor</li>
+      <li>Estufa eléctrica</li>
+      <li>Escritorio</li>
+      <li>Cama aprox. 1,40 m</li>
+      <li class="hl">Nevera</li>
+      <li class="hl">Microondas *</li>
+      <li class="hl">Televisor 42’’</li>
+      <li class="hl">Comedor</li>
     </ul>
+    
+    <div class="online-promo mt-0">
+      * Beneficios disponibles haciendo reserva en línea
+    </div>
   </div>
   `
 })
@@ -105,7 +113,7 @@ const app = new Vue({
         imgx1: 'apartamento02@1x.jpg',
         imgx2: 'apartamento02@2x.jpg',
         imgx3: 'apartamento02@3x.jpg',
-        imgx1_5: 'apartamento0@1.5x.jpg',
+        imgx1_5: 'apartamento02@1.5x.jpg',
       },
       {
         name: 'Apartamento',

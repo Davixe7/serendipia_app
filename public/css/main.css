@@ -176,7 +176,7 @@ span.page-title:before {
   z-index: 10;
 }
 
-.whatsapp-number .number a {
+.whatsapp-number .number {
   display: inline-block;
   color: #fff !important;
   font-size: 13px;
@@ -365,6 +365,18 @@ p {
 .btn.btn-outline-success:hover {
   color: #fff;
   text-decoration: none;
+}
+.btn-reserve-yours {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f2f2f7;
+  background: #35b447;
+  padding: 9px 16px;
+  border-radius: 0;
+  border: none;
 }
 
 .address {
