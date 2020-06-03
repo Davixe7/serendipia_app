@@ -12,7 +12,8 @@
   <div class="viewport">
     <span class="viewport-item-title-wrap">
       <span class="viewport-item-title">Tipo @{{ currentIndex }}</span>
-      <a href="#" class="btn-details" data-toggle="modal" data-target="#detail-modal">Detalle</a>
+      <a href="#" class="btn-details ml-auto" data-toggle="modal" data-target="#plane-modal">Plano detallado</a>
+      <a href="#" class="btn-details ml-3" data-toggle="modal" data-target="#detail-modal">Detalle</a>
     </span>
     <div class="viewport-screen">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">

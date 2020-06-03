@@ -163,11 +163,18 @@ ul.apartment-includes {
   align-items: center;
   justify-content: center;
 }
+#plane-modal .modal-body {
+  transform: rotateZ(-90deg);
+}
 @media(min-width: 768px){
   #explore .viewport-screen {
     justify-content: flex-start;
   }
+  #plane-modal .modal-body {
+    transform: none;
+  }
 }
+
 
 #detail-modal .modal-header {
   background: none;

@@ -4,7 +4,8 @@
   <div class="viewport">
     <span class="viewport-item-title-wrap">
       <span class="viewport-item-title">@{{ currentItem.name }}</span>
-      <a href="#" class="btn-details" data-toggle="modal" data-target="#detail-modal">Detalle</a>
+      <a :href="'/zonas-sociales-360/?startscene=' + currentItem.scene" target="_blank" class="btn-details ml-auto">Explorar 360</a>
+      <a href="#" class="btn-details ml-2" data-toggle="modal" data-target="#detail-modal">Detalle</a>
     </span>
     <div class="viewport-screen">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -21,6 +22,7 @@
     <div class="viewport-details-box" style="width: 320px;">
       <shared-details-box v-if="currentItem" :item="currentItem"/>
     </div>
+    <div class="bottom-shade"></div>
   </div>
 </div>
 

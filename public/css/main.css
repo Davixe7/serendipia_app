@@ -133,6 +133,11 @@ span.page-title:before {
   letter-spacing: 0;
   color: #707073;
 }
+.sidenav-nav li a:active,
+.sidenav-nav li a:focus,
+.sidenav-nav li a:hover {
+  text-decoration: none;
+}
 
 .sidenav-nav li a:hover {
   color: #fff;

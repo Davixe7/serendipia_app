@@ -8,7 +8,7 @@
       </a>
       Apartamento {{$apartment->number}}
     </span>
-    <button class="btn btn-outline-success btn-sm ml-auto" data-toggle="modal" data-target="#detail-modal">
+    <button class="btn btn-outline-success btn-sm ml-auto" data-toggle="modal" data-target="#plane-modal">
       Plano detallado
     </button>
   </div>
@@ -24,7 +24,7 @@
           </a>
           <span>Apartamento {{$apartment->number}}</span>
         </span>
-        <button class="btn btn-outline-success btn-sm ml-auto" data-toggle="modal" data-target="#detail-modal">
+        <button class="btn btn-outline-success btn-sm ml-auto" data-toggle="modal" data-target="#plane-modal">
           Plano detallado
         </button>
       </div>
@@ -119,13 +119,13 @@
 </div>
 
 <!-- Modal Plano-->
-<div class="modal fade" id="detail-modal" tabindex="-1" role="dialog" aria-labelledby="plane-modalTitle" aria-hidden="true">
+<div class="modal fade" id="plane-modal" tabindex="-1" role="dialog" aria-labelledby="plane-modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content" style="background: none;">
       <div class="modal-header">
         <span class="ml-auto close-white" data-dismiss="modal"></span>
       </div>
-      <div class="modal-body" style="background: #f2f2f7;">
+      <div class="modal-body" style="background: #f2f2f7; transform: rotateZ(-90deg);">
         <img :src="`/img/aptos/planos/PLANO_${apartment.type_id}.png`" alt="" style="max-width: 100%;">
       </div>
     </div>

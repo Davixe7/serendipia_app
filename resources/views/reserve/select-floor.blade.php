@@ -3,7 +3,7 @@
 <div id="reserve-yours-floor" class="reserve-container">
   <div class="d-sm-none text-right py-3">
     <button class="btn btn-outline-default btn-sm" @click="selectByImage = !selectByImage">
-      @{{ selectByImage ? 'Volver a lista' : 'Ver imagen' }}
+      @{{ selectByImage ? 'Ver lista' : 'Ver imagen' }}
     </button>
   </div>
   

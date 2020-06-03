@@ -11536,9 +11536,17 @@ ul.apartment-includes {
   justify-content: center;
 }
 
+#plane-modal .modal-body {
+  transform: rotateZ(-90deg);
+}
+
 @media (min-width: 768px) {
   #explore .viewport-screen {
     justify-content: flex-start;
+  }
+
+  #plane-modal .modal-body {
+    transform: none;
   }
 }
 
