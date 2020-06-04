@@ -11004,19 +11004,6 @@ a.text-dark:focus {
   color: #00C232;
 }
 
-.btn-reserve-yours {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #f2f2f7;
-  background: #35b447;
-  padding: 9px 16px;
-  border-radius: 0;
-  border: none;
-}
-
 hr {
   border-width: 1px;
   border-color: #474749;
@@ -11860,6 +11847,10 @@ a:hover .hover-path {
   .floors-list li:hover .action .btn,
   .floors-list li.active .action .btn {
     display: inline-flex;
+  }
+
+  .action .btn:hover .arrow-right-green {
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2214%22%3E%3Cpath%20d%3D%22M.5%206.833h16M11.167%201.5L16.5%206.833l-5.333%205.334%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke%3D%22%23FFF%22%20stroke-width%3D%221.185%22%2F%3E%3C%2Fsvg%3E");
   }
 }
 

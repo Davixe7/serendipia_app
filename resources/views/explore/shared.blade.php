@@ -104,7 +104,7 @@ const app = new Vue({
         ]
       },
       {
-        "scene"       : "scene_terraza_lounge",
+        "scene"       : "scene_terraza_comunal",
         "name"        : "Sky Lounge",
         "description" : "¿Cansado de los planes de siempre? Nuestro sky lounge es perfecto para salir de la rutina y tener una vista increíble de la ciudad. Celebra y disfruta con tus invitados en esta agradable zona.",
         "location"    : "Piso 1",

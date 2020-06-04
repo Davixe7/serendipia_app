@@ -49503,7 +49503,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 // register globally
 
-Vue.component('vue-cool-lightbox');
+Vue.component('vue-cool-lightbox', window.CoolLightBox["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -20,6 +20,13 @@
       right: 40px;
       border: 1px solid #fff;
       white-space: nowrap;
+      width: fit-content;
+    }
+    .custom-navbar .btn-reserve-yours {
+      display: none;
+    }
+    .custom-navbar.bg-dark .btn-reserve-yours {
+      display: inline-block;
     }
     @media(min-width: 768px){
       .btn-explore-360 {
@@ -35,7 +42,10 @@
     
     <div id="navbar" class="custom-navbar">
       <a class="custom-navbar-brand index" href="/"><img src="/img/logos/logo-serendipia.svg" alt="logo serendipia"></a>
-      <div class="ml-auto">
+      <div class="ml-auto d-inline-flex align-items-center">
+        <a href="#" class="btn btn-reserve-yours mr-4">
+          Separa el Tuyo
+        </a>
         <div class="sidenavToggler">
           <span class="sidenav-toggler-icon"></span>
         </div>

@@ -11,6 +11,14 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/about.css') }}" rel="stylesheet">
     <style>
+      #about p {
+        letter-spacing: normal;
+      }
+      #about .modal-top {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+      }
       .picture-disclaimer {
         display: block;
         font-size: 8px;
@@ -88,7 +96,9 @@
               <div class="col-md-3">
                 <div class="quote">
                   <div class="content">
-                    <p>Acontecimiento<br> afortunado<br> que surge de<br> manera inesperada,<br> y hace que tu vida<br> nunca sea igual.</p>
+                    <p>Acontecimiento<br> afortunado<br> que surge de<br>
+                      <span style="white-space: nowrap;">manera inesperada,</span>
+                    y hace que tu vida<br> nunca sea igual.</p>
                     <img src="/img/icons/quotation-mark.svg" alt="" style="width: 34px; top: 0; left: 0;">
                     <img src="/img/icons/quotation-mark.svg" alt="" style="width: 34px; bottom: 8px; right: 40px; transform: rotateZ(180deg);">
                   </div>
@@ -97,7 +107,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-10 offset-md-2">
+              <div class="col-md-12 text-center">
                 <img src="/img/quienes-somos01.jpg" alt="">
               </div>
             </div>
@@ -120,7 +130,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-10 offset-md-2">
+              <div class="col-md-12 text-center">
                 <img src="/img/group-17.jpg" alt="">
               </div>
             </div>
@@ -134,23 +144,23 @@
                   </div>
                   <div class="col-lg-6 feature">
                     <img src="/img/icons/key.svg" alt="">
-                    <span><b>Réntalo en plataformas digitales</b> por estancias cortas</span>
+                    <span><b>Réntalo en plataformas<br> digitales</b> por estancias cortas</span>
                   </div>
                   <div class="col-lg-6 feature">
                     <img src="/img/icons/sofa.svg" alt="">
-                    <span>Lo entregamos <b>listo para vivir o arrendar</b></span>
+                    <span>Lo entregamos <b>listo<br> para vivir o arrendar</b></span>
                   </div>
                   <div class="col-lg-6 feature">
                     <img src="/img/icons/idea.svg" alt="">
-                    <span>Edificio automatizado: <b>costos de administración reducidos</b></span>
+                    <span>Edificio automatizado: <b>costos<br> de administración reducidos</b></span>
                   </div>
                   <div class="col-lg-6 feature">
                     <img src="/img/icons/money.svg" alt="">
-                    <span<b>Precio competitivo</b> en el mercado</span>
+                    <span><b>Precio competitivo<br></b> en el mercado</span>
                   </div>
                   <div class="col-lg-6 feature">
                     <img src="/img/icons/laundry.svg" alt="">
-                    <span>Variedad de <b>zonas sociales completamente dotadas</b></span>
+                    <span>Variedad de <b>zonas sociales<br> completamente dotadas</b></span>
                   </div>
                 </div>
               </div>

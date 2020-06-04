@@ -35,7 +35,7 @@
           <use xlink:href="#photo"/>
           <a v-for="(apt,n) in apartments"
              :id="`apt${n}`"
-             :xlink:href="`/seleccionar-apartamento/${apt.id}/detalle`"
+             :xlink:href="`/separar-apartamento/${apt.id}/detalle`"
              :class="{active:activeApt == n, disabled:!apt.available}"
              @mouseover="activeApt = n">
             <title>Apartamento @{{apt.number}}</title>

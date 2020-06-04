@@ -14,7 +14,10 @@
   </div>
   <div class="row">
     <div class="col-md-6 apartment-detail-plane">
-      <img src="/img/aptos/separar/APTO_{{$apartment->type->id}}.png" alt="" style="max-width: 100%;">
+      <img src="/img/aptos/separar/APTO_{{$apartment->type->id}}.png"
+           alt=""
+           style="max-width: 100%;"
+           @click="lightboxIndex=0">
     </div>
     <div class="col-md-6">
       <div class="floors-list-header">
@@ -116,6 +119,12 @@
       </div>
     </div>
   </div>
+  
+  <vue-cool-lightbox
+    :items="pictures"
+    :index="lightboxIndex"
+    @close="lightboxIndex = null"
+  />
 </div>
 
 <!-- Modal Plano-->
@@ -160,8 +169,16 @@
 const app = new Vue({
   el: '#app',
   data(){return{
+    lightboxIndex: null,
     apartment: {!! json_encode( $apartment ) !!},
   }},
+  computed:{
+    pictures(){
+      let pics = []
+      pics.push( '/img/aptos/separar/APTO_' + this.apartment.type.id  + '.png')
+      return pics
+    }
+  }
 })
 </script>
 <style>

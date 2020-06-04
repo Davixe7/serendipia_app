@@ -22,7 +22,7 @@
               <source media="(min-width: 1366px)" :srcset="`/img/aptos/renders/${currentItem.imgx3}`">
               <source media="(min-width: 768px)" :srcset="`/img/aptos/renders/${currentItem.imgx2}`">
               <source media="(min-width: 480px)" :srcset="`/img/aptos/renders/${currentItem.imgx1_5}`">
-              <img :src="`/img/aptos/renders/${currentItem.imgx1}`" class="w-md-100">
+              <img :src="`/img/aptos/renders/${currentItem.imgx1}`" class="w-md-100" @click="lightboxIndex=n">
             </picture>
           </div>
         </div>
@@ -33,6 +33,10 @@
       <renders-details-box :currentItem="currentItem"/>
     </div>
   </div>
+  <vue-cool-lightbox
+    :items="pictures"
+    :index="lightboxIndex"
+    @close="lightboxIndex = null">
 </div>
 
 <!-- Modal Detalle-->
@@ -82,7 +86,7 @@ Vue.component('renders-details-box', {
       <li>Escritorio</li>
       <li>Cama aprox. 1,40 m</li>
       <li class="hl">Nevera</li>
-      <li class="hl">Microondas *</li>
+      <li class="hl">Microondas</li>
       <li class="hl">Televisor 42’’</li>
       <li class="hl">Comedor</li>
     </ul>
@@ -97,7 +101,8 @@ Vue.component('renders-details-box', {
 const app = new Vue({
   el: '#app',
   data(){return{
-    items: [],
+    lightboxIndex: 0,
+    basePictureUrl: '/img/aptos/renders/',
     currentIndex: 1,
     activeNav: 'renders',
     items: [
@@ -135,6 +140,11 @@ const app = new Vue({
     }
   },
   computed:{
+    pictures(){
+      return this.items.map(item=>{
+        return this.basePictureUrl + item.imgx3;
+      })
+    },
     currentItem(){
       return this.items[ this.currentIndex - 1]
     },

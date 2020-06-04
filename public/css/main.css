@@ -354,7 +354,7 @@ p {
 }
 
 .btn.btn-success {
-  font-weight: 300;
+  font-weight: 400;
   border: 1px solid #35b447;
   background: #35b447;
 }
@@ -443,6 +443,7 @@ p {
   color: gray;
   text-align: center;
   margin-bottom: 15px;
+  letter-spacing: normal;
 }
 @media (min-width: 991px) {
   .secure-payment-advice {
