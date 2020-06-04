@@ -11595,10 +11595,9 @@ ul.apartment-includes {
   background: #19191c;
 }
 
-#shared .viewport-screen img {
-  max-width: initial !important;
+#shared .viewport-screen .carousel img {
   width: auto;
-  height: calc(100vh - 170px);
+  min-height: calc(100vh - 170px);
 }
 
 @media (min-width: 480px) {

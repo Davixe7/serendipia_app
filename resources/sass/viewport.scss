@@ -226,10 +226,9 @@ ul.apartment-includes {
   .viewport-screen {
     background: #19191c;
   }
-  .viewport-screen img {
-    max-width: initial !important;
+  .viewport-screen .carousel img {
     width: auto;
-    height: calc(100vh - 170px);
+    min-height: calc(100vh - 170px);
   }
 }
 @media(min-width: 480px){

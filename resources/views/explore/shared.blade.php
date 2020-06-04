@@ -2,7 +2,7 @@
 @section('content')
 <div id="shared">
   <div class="viewport">
-    <span class="viewport-item-title-wrap">
+    <span class="viewport-item-title-wrap" v-if="currentItem.slug">
       <span class="viewport-item-title">@{{ currentItem.name }}</span>
       <span class="ml-auto">
         <a v-if="currentItem.slug != 'lavanderia'" :href="threeSixtyUrl + currentItem.scene" target="_blank" class="btn-details ml-auto">Explorar 360</a>
@@ -10,7 +10,7 @@
       </span>
     </span>
     <div class="viewport-screen">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+      <div v-if="currentItem.slug" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <div v-for="(item,n) in items" :key="n" class="carousel-item" :class="{active: currentIndex == n+1}">
             <picture>
@@ -20,9 +20,12 @@
           </div>
         </div>
       </div>
+      <div :class="{'d-none': currentIndex != 5}" v-show="currentIndex == 5">
+        @include('cinco')
+      </div>
     </div>
-    <div class="viewport-details-box" style="width: 320px;">
-      <shared-details-box v-if="currentItem" :item="currentItem"/>
+    <div class="viewport-details-box" v-if="currentItem.slug" style="width: 320px;">
+      <shared-details-box :item="currentItem"/>
     </div>
     <div class="bottom-shade"></div>
   </div>
@@ -129,6 +132,9 @@ const app = new Vue({
           "Máquinas de lavada y secado", "Mobiliario", "Ambientación del lugar"
         ]
       },
+      {
+        "name": ''
+      }
     ],
     currentIndex: 1,
     threeSixtyUrl: '/zonas-sociales-360/?startscene='
@@ -143,7 +149,10 @@ const app = new Vue({
   },
   computed:{
     currentItem(){
-      return this.items[ this.currentIndex - 1]
+      if( this.currentIndex != 5 ){
+        return this.items[ this.currentIndex - 1]
+      }
+      return {"name": ''}
     },
     onLastFloor(){
       return this.currentIndex == this.items.length
@@ -152,4 +161,51 @@ const app = new Vue({
 })
 
 </script>
+
+<style>
+  #cinco {
+    padding: 20px 0;
+    background: url('/img/aptos/areas/cinco@3x.jpg');
+    background-size: cover;
+  }
+  .shared-sections-cards {
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 170px);
+  }
+  .shared-section-card {
+    flex: 0 1 auto;
+    max-width: 250px;
+    color: #fff;
+    padding: 24px;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-right: 31px;
+    text-align: left !important;
+  }
+  .shared-section-card img {
+    margin-bottom: 16px;
+    max-width: 100%;
+    width: 56px !important;
+    height: auto;
+  }
+  .shared-section-card .title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #f2f2f7;
+    margin-bottom: 10px;
+  }
+  .shared-section-card .description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: normal;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+</style>
 @endsection

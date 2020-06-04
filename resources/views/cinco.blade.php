@@ -1,7 +1,5 @@
-@extends('layouts.app')
-@section('content')
 <div id="cinco">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row shared-sections-cards">
       <div class="shared-section-card">
         <img src="/img/icons/baking.svg" alt="">
@@ -107,49 +105,3 @@
     </div>
   </div>
 </div>
-@endsection
-
-@section('footer')
-  @include('partials.footer')
-  <style>
-    #cinco {
-      background: url('/img/aptos/areas/cinco@3x.jpg');
-      background-size: cover;
-    }
-    .shared-sections-cards {
-      align-items: center;
-      justify-content: center;
-      min-height: calc(100vh - 170px);
-    }
-    .shared-section-card {
-      flex: 0 1 auto;
-      max-width: 250px;
-      color: #fff;
-      padding: 24px;
-      -webkit-backdrop-filter: blur(2px);
-      backdrop-filter: blur(2px);
-      background-color: rgba(0, 0, 0, 0.8);
-      margin-right: 31px;
-    }
-    .shared-section-card img {
-      margin-bottom: 16px;
-    }
-    .shared-section-card .title {
-      display: block;
-      font-size: 20px;
-      font-weight: bold;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #f2f2f7;
-      margin-bottom: 10px;
-    }
-    .shared-section-card .description {
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 1.57;
-      letter-spacing: normal;
-      color: #fff;
-      margin-bottom: 12px;
-    }
-  </style>
-@endsection
