@@ -11591,6 +11591,10 @@ ul.apartment-includes {
   max-width: 100%;
 }
 
+#shared .viewport-screen {
+  background: #19191c;
+}
+
 #shared .viewport-screen img {
   max-width: initial !important;
   width: auto;

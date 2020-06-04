@@ -9,7 +9,9 @@
 @endsection
 
 @section('slides-nav')
-  @include('partials.slides-nav')
+  <div style="flex: 1 0 auto; display: flex; justify-content: center; align-items: center;">
+    @include('partials.slides-nav')
+  </div>
 @endsection
 
 @section('mobile-slides-nav')
