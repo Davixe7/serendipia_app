@@ -7,6 +7,7 @@
   <link rel="icon" href="/img/icons/favicon.svg">
   <title>{{ config('app.name', 'Laravel') }}</title>
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link href="{{ asset('css/main.css') }}" rel="stylesheet">
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Chivo:300,400,700" rel="stylesheet">
 </head>
