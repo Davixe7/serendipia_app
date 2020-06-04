@@ -27,10 +27,14 @@
   
   <ul class="sidenav-socials">
     <li>
-      <a href="https://www.instagram.com/serendipiaflats/?hl=es-la"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/serendipiaflats/?hl=es-la">
+        <span class="instagram-icon"></span>
+      </a>
     </li>
     <li>
-      <a href="https://www.facebook.com/Serendipia-111088827252397/?modal=admin_todo_tour"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.facebook.com/Serendipia-111088827252397/?modal=admin_todo_tour">
+        <span class="facebook-icon"></span>
+      </a>
     </li>
   </ul>
   

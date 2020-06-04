@@ -60,6 +60,13 @@ $(document).ready(function(){
     else {
       navbar.removeClass("bg-dark");
     }
+    
+    if ($(window).scrollTop() > 768){
+      navbar.addClass( "with-btn");
+    }
+    else {
+      navbar.removeClass("with-btn");
+    }
   })
   
 });

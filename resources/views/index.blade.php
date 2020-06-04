@@ -25,7 +25,7 @@
     .custom-navbar .btn-reserve-yours {
       display: none;
     }
-    .custom-navbar.bg-dark .btn-reserve-yours {
+    .custom-navbar.with-btn .btn-reserve-yours {
       display: inline-block;
     }
     @media(min-width: 768px){
