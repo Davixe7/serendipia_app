@@ -165,7 +165,7 @@ const app = new Vue({
 <style>
   #cinco {
     padding: 20px 0;
-    background: url('/img/aptos/areas/cinco@3x.jpg');
+    background: url('/img/aptos/areas/cinco@3x.png');
     background-size: cover;
   }
   .shared-sections-cards {
