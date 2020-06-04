@@ -86,13 +86,22 @@
             <div class="col">
               <div class="mapouter">
                 <div class="gmap_canvas">
-                  <iframe
+                  <!-- <iframe
                     id="gmap_canvas"
                     src="https://maps.google.com/maps?q=4.653421%2C%20-74.058617&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                     width="100%" height="500"
                     style="min-height: calc(100vh - 180px);
                            border:none;
                            margin-bottom: 20px;">
+                  </iframe> -->
+                  <iframe
+                    src="https://www.google.com/maps/d/u/0/embed?mid=17vQg9cPbhW84sKcW5d8J6c8_UHv2c-Zx"
+                    width="100%"  
+                    height="calc(100vh - 180px)"
+                    style="min-height: calc(100vh - 180px);
+                           border:none;
+                           margin-bottom: 20px;"
+                    >
                   </iframe>
                 </div>
                 <style>

@@ -87,20 +87,25 @@ Vue.component('planes-details-box', {
       }
     }
   },
+  filters:{
+    asArea(area){
+      return (area) ? area.toString().replace('.', ',') : ''
+    }
+  },
   template: `
   <div>
     <div class="measures">
       <span>
         <span class="measure-title">Área construida:</span>
-        <span class="measure">@{{ type.built_area }} m²</span>
+        <span class="measure">@{{ type.built_area | asArea }} m²</span>
       </span>
       <span>
         <span class="measure-title">Área privada</span>
-        <span class="measure">@{{ type.private_area }} m<sup>2</sup></span>
+        <span class="measure">@{{ type.private_area | asArea }} m<sup>2</sup></span>
       </span>
       <span>
         <span class="measure-title">Altura libre</span>
-        <span class="measure">@{{ type.free_height }} m<sup>2</sup></span>
+        <span class="measure">@{{ type.free_height | asArea }} m<sup>2</sup></span>
       </span>
     </div>
     <button class="btn btn-outline-default" data-toggle="modal" data-target="#plane-modal" @click="closeDetailModal">
