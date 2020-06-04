@@ -87,7 +87,7 @@ const app = new Vue({
         "description" : "En nuestro coworking podrás disfrutar de un espacio donde la creatividad y la productividad son los mejores aliados.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
-        "img"         : "coworking.jpg",
+        "img"         : "coworking@3x.png",
         "slug"        : "coworking",
         "included"    : [
           "Escritorios", "Sillas", "Ambientación del lugar"
@@ -99,7 +99,7 @@ const app = new Vue({
         "description" : "¿Una partida de ping-pong? ¿un torneo de futbolito? Nuestro salón de juegos cuenta con una variedad de juegos que podrás disfrutar en cualquier momento del día.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
-        "img"         : "salonjuego.jpg",
+        "img"         : "salonjuego@3x.png",
         "slug"        : "salonjuego",
         "included"    : [
           "Televisor 50’’","Mesa Ping Pong","Mesa Futbolito","Mobiliario","Ambientación del lugar"
@@ -111,7 +111,7 @@ const app = new Vue({
         "description" : "¿Cansado de los planes de siempre? Nuestro sky lounge es perfecto para salir de la rutina y tener una vista increíble de la ciudad. Celebra y disfruta con tus invitados en esta agradable zona.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
-        "img"         : "skylounge.jpg",
+        "img"         : "skylounge@3x.png",
         "slug"        : "skylounge",
         "included"    : [
           "Mobiliario", "Ambientación del lugar"
@@ -123,7 +123,7 @@ const app = new Vue({
         "description" : "Mantener la ropa limpia es difícil viviendo sólo, por eso decidimos facilitar el proceso con nuestra lavandería autoservicio, administrada por la empresa Lavanti, a un precio razonable.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
-        "img"         : "lavanderia.jpg",
+        "img"         : "lavanderia@3x.png",
         "slug"        : "lavanderia",
         "included"    : [
           "Máquinas de lavada y secado", "Mobiliario", "Ambientación del lugar"
