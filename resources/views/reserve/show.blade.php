@@ -39,15 +39,15 @@
           <div class="apartment-measures">
             <div>
               <div class="measure-title">Área construida</div>
-              <div class="measure">{{ $apartment->type->built_area }} m <sup>2</sup></div>
+              <div class="measure">@{{ apartment.type.built_area | asArea }} m <sup>2</sup></div>
             </div>
             <div>
               <div class="measure-title">Área privada</div>
-              <div class="measure">{{$apartment->type->private_area}} m <sup>2</sup></div>
+              <div class="measure">@{{ apartment.type.private_area | asArea }} m <sup>2</sup></div>
             </div>
             <div>
               <div class="measure-title">Valor del apartamento</div>
-              <div class="measure">{{$apartment->apt_value}}</div>
+              <div class="measure">$ @{{apartment.apt_value | asMoney }}</div>
             </div>
             <div>
               <div class="measure-title">Altura libre</div>
@@ -93,7 +93,7 @@
               </tr>
               <tr>
                 <td>Cuota mensual</td>
-                <td>$ {{$apartment->monthly_quota}} </td>
+                <td>$ @{{ apartment.monthly_quota | asMoney }} </td>
               </tr>
               <tr>
                 <td>Fecha entrega</td>
@@ -101,7 +101,7 @@
               </tr>
               <tr>
                 <td>Valor a financiar</td>
-                <td>$ {{ $apartment->finance_value }}</td>
+                <td>$ @{{ apartment.finance_value | asMoney }}</td>
               </tr>
             </table>
             <div class="cta-card">
@@ -177,6 +177,14 @@ const app = new Vue({
       let pics = []
       pics.push( '/img/aptos/separar/APTO_' + this.apartment.type.id  + '.png')
       return pics
+    }
+  },
+  filters:{
+    asMoney(string){
+      return string.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    },
+    asArea(string){
+      return string.toString().replace('.', ',')
     }
   }
 })

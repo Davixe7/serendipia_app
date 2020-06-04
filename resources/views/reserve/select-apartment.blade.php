@@ -62,7 +62,7 @@
             <div>
               <span class="floor-name">Apto @{{ apt.number }}</span>
               <span v-if="apt.available" class="floor-available">
-                @{{ apt.type.built_area }} m<sup>2</sup> – $ @{{ apt.finance_value }}
+                @{{ apt.type.built_area | asArea }} m<sup>2</sup> – $ @{{ apt.finance_value | asMoney }}
               </span>
               <span v-else class="floor-available">No disponible</span>
             </div>
@@ -95,6 +95,14 @@ const app = new Vue({
     activeApt: null,
     selectByImage: true,
   }},
+  filters:{
+    asMoney(string){
+      return string.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    },
+    asArea(string){
+      return string.toString().replace('.', ',')
+    }
+  }
 })
 </script>
 @endsection

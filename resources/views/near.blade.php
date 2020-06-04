@@ -86,7 +86,7 @@
             <div class="col-md-4">
               <div class="near-item">
                 <picture>
-                  <source media="(min-width:1367px)" srcset="/img/near/naturaleza@2x.jpg">
+                  <!-- <source media="(min-width:1367px)" srcset="/img/near/naturaleza@2x.jpg"> -->
                   <img src="/img/near/naturaleza.jpg" alt="">
                 </picture>
                 <div class="content">

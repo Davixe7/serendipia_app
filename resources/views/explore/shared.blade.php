@@ -4,8 +4,10 @@
   <div class="viewport">
     <span class="viewport-item-title-wrap">
       <span class="viewport-item-title">@{{ currentItem.name }}</span>
-      <a :href="'/zonas-sociales-360/?startscene=' + currentItem.scene" target="_blank" class="btn-details ml-auto">Explorar 360</a>
-      <a href="#" class="btn-details ml-2" data-toggle="modal" data-target="#detail-modal">Detalle</a>
+      <span class="ml-auto">
+        <a v-if="currentItem.slug != 'lavanderia'" :href="threeSixtyUrl + currentItem.scene" target="_blank" class="btn-details ml-auto">Explorar 360</a>
+        <a href="#" class="btn-details" data-toggle="modal" data-target="#detail-modal">Detalle</a>
+      </span>
     </span>
     <div class="viewport-screen">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -70,7 +72,7 @@ Vue.component('shared-details-box', {
       <li v-for="included in item.included">@{{ included }}</li>
     </ul>
     
-    <a :href="'/zonas-sociales-360/?startscene=' + item.scene" target="_blank" class="btn btn-outline-default">Explorar en 360°</a>
+    <a v-if="item.slug != 'lavanderia'" :href="'/zonas-sociales-360/?startscene=' + item.scene" target="_blank" class="btn btn-outline-default">Explorar en 360°</a>
   </div>
   `
 })
@@ -82,7 +84,7 @@ const app = new Vue({
       {
         "scene"       : "scene_coworking",
         "name"        : "Coworking",
-        "description" : "En nuestro co-working podrás disfrutar de un espacio donde la creatividad y la productividad son los mejores aliados.",
+        "description" : "En nuestro coworking podrás disfrutar de un espacio donde la creatividad y la productividad son los mejores aliados.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
         "img"         : "coworking.jpg",
@@ -129,6 +131,7 @@ const app = new Vue({
       },
     ],
     currentIndex: 1,
+    threeSixtyUrl: '/zonas-sociales-360/?startscene='
   }},
   methods:{
     skipFloor(){
