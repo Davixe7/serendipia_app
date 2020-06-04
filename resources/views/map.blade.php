@@ -84,33 +84,55 @@
         <div style="flex: 0 0 100%; padding: 0 40px 20px;">
           <div class="row h-100">
             <div class="col">
-              <iframe src="/get-360/?startscene=scene_localization" width="100%" height="100%"
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=4.653421%2C%20-74.058617&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    width="100%" height="500"
+                    style="min-height: calc(100vh - 180px);
+                           border:none;
+                           margin-bottom: 20px;">
+                  </iframe>
+                </div>
+                <style>
+                  .mapouter{
+                    position:relative;
+                    text-align:right;
+                    min-height: calc(100vh - 180px);
+                    width:100%;
+                  }
+                  .gmap_canvas {
+                    overflow:hidden;
+                    background:none !important;
+                    min-height: calc(100vh - 180px);
+                    width: 100%;
+                  }
+                </style>
+              </div>
+              <!-- <iframe src="/get-360/?startscene=scene_localization" width="100%" height="100%"
                       style="min-height: calc(100vh - 180px);
                              border:none;
-                             margin-bottom: 20px;"></iframe>
+                             margin-bottom: 20px;"></iframe> -->
             </div>
           </div>
         </div>
           
         <!-- Bottom -->
-        <!-- Bottom -->
         <div class="modal-bottom">
           <div class="d-none d-sm-block container-fluid">
             <div class="row">
-              
               <div class="d-none d-sm-block col-sm-3 pl-0">
                 <div class="btn-group">
                   <a href="/sitios-cercanos" class="btn btn-default">Sitios de interés</a>
                   <a href="/mapa" class="btn btn-default active">Mapa</a>
                 </div>
               </div>
-              
               <div class="col-6 col-sm-3">
                 <span class="picture-disclaimer">
                   Las imágenes acá contenidas son una representación gráfica del diseñador y están sujetas a cambio en cuanto a diseño, acabados o materiales por disposición del grupo constructor o la curaduría correspondiente.
                 </span>
               </div>
-              
               <div class="col-12 col-sm-6 text-sm-right footer-logos">
                 <div class="footer-logo-wrap">
                   <span class="caption">Un proyecto:</span>
