@@ -1,10 +1,14 @@
 <div class="custom-footer">
-  @yield('tabs-nav')
-  <span class="picture-disclaimer">
-    Las imágenes acá contenidas son una representación gráfica del diseñador y están sujetas a cambio en cuanto a diseño, acabados o materiales por disposición del grupo constructor o la curaduría correspondiente.
-  </span>
+  <div class="first-block">
+    @yield('tabs-nav')
+    <span class="picture-disclaimer">
+      Las imágenes acá contenidas son una representación gráfica del diseñador y están sujetas a cambio en cuanto a diseño, acabados o materiales por disposición del grupo constructor o la curaduría correspondiente.
+    </span>
+  </div>
   @yield('slides-nav')
-  @include('partials.footer-logos')
+  <div class="last-block">
+    @include('partials.footer-logos')
+  </div>
 </div>
 
 @yield('mobile-slides-nav')
@@ -19,7 +23,9 @@
     </span>
   </div>
   <div class="wa-me">
-    <a href="https://api.whatsapp.com/send?phone=+573174857023&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia.">
+    <a 
+      target="_blank"
+      href="https://api.whatsapp.com/send?phone=+573174857023&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia.">
       <img src="/img/whatsapp.png" alt="">
     </a>
   </div>

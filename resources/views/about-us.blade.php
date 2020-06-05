@@ -186,7 +186,7 @@
                 <div class="secure-payment-advice">
                   <img src="/img/lock.png" alt="" class="mr-2">
                   <span class="mr-3">Tus pagos están protegidos con</span>
-                  <img src="/img/logos/logo-pse-blue.png" alt="">
+                  <img src="/img/logos/logo-payu.png" alt="">
                 </div>
                 
                 <div class="picture-disclaimer">
@@ -212,8 +212,8 @@
                 </div>
               </div>
               
-              <div class="col-6 col-md-4 order-sm-2 mb-4 d-flex justify-content-end align-items-center text-right">
-                <ul class="sidenav-socials d-inline-block">
+              <div class="col-6 col-md-4 order-sm-2 mb-4 footer-socials">
+                <ul class="sidenav-socials">
                   <li>
                     <a target="_blank" href="https://www.instagram.com/serendipiaflats/?hl=es-la">
                       <span class="instagram-icon"></span>
@@ -249,6 +249,11 @@
           </div>
         </footer>
         
+        <span class="fixed-whatsapp-btn">
+          <a href="https://api.whatsapp.com/send?phone=+573174857023&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia." target="_blank">
+            <img src="/img/whatsapp.png" alt="whatsapp" style="width: 40px; height: 40px;">
+          </a>
+        </span>
       </div>
     </div>
   </body>

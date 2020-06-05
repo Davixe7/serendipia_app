@@ -11125,6 +11125,32 @@ hr {
   }
 }
 
+#index .custom-navbar .btn-reserve-yours,
+#about-us .custom-navbar .btn-reserve-yours {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#index .custom-navbar.with-btn .btn-reserve-yours,
+#about-us .custom-navbar.with-btn .btn-reserve-yours {
+  opacity: 1;
+}
+
+#index .fixed-whatsapp-btn,
+#about-us .fixed-whatsapp-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 998;
+}
+
+@media (min-width: 768px) {
+  #index .footer-socials .sidenav-socials,
+  #about-us .footer-socials .sidenav-socials {
+    margin-right: 50px;
+  }
+}
+
 /* CUSTOM NAVBAR */
 
 .custom-navbar {
@@ -11325,6 +11351,17 @@ hr {
 @media (min-width: 768px) {
   .custom-footer {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .custom-footer .first-block,
+  .custom-footer .last-block {
+    flex: 0 0 41.66%;
+  }
+
+  .custom-footer .last-block {
+    display: flex;
+    justify-content: flex-end;
   }
 
   .custom-mobile-footer {
@@ -11946,6 +11983,7 @@ a:hover .hover-path {
 
 #reserve-yours-final .cta-card {
   background: #35b447;
+  background: #f2f2f7;
   padding: 15px;
   margin: 20px -24px -12px;
 }
@@ -11957,6 +11995,7 @@ a:hover .hover-path {
   line-height: 1.57;
   letter-spacing: normal;
   color: #fff;
+  color: #19191c;
   margin-bottom: 10px;
 }
 
@@ -11964,8 +12003,10 @@ a:hover .hover-path {
   font-size: 14px;
   font-weight: normal;
   color: #19191c;
+  color: #fff;
   padding: 8px 14px;
   background: #f2f2f7;
+  background: #35b447;
 }
 
 #reserve-yours-final .hl:after {

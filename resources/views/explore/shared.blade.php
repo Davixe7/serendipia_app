@@ -13,7 +13,7 @@
       <div v-if="currentItem.slug" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <div v-for="(item,n) in items" :key="n" class="carousel-item" :class="{active: currentIndex == n+1}">
-            <picture>
+            <picture @click="lightboxIndex=n">
               <source media="(min-width:768px)" :srcset="`./img/aptos/areas/${currentItem.img}`">
               <img :src="`./img/aptos/areas/${currentItem.slug}@1x.jpg`" class="d-block">
             </picture>
@@ -29,6 +29,12 @@
     </div>
     <div class="bottom-shade"></div>
   </div>
+  
+  <vue-cool-lightbox 
+    :items="pictures" 
+    :index="lightboxIndex"
+    @close="lightboxIndex = null">
+  </vue-cool-lightbox>
 </div>
 
 <!-- Modal Detalle-->
@@ -83,6 +89,7 @@ Vue.component('shared-details-box', {
 const app = new Vue({
   el: '#app',
   data(){return{
+    lightboxIndex: null,
     items: [
       {
         "scene"       : "scene_coworking",
@@ -148,6 +155,11 @@ const app = new Vue({
     }
   },
   computed:{
+    pictures(){
+      return this.items.map(item=>{
+        return item.img ? `/img/aptos/areas/${item.img}` : ''
+      })
+    },
     currentItem(){
       if( this.currentIndex != 5 ){
         return this.items[ this.currentIndex - 1]

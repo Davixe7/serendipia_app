@@ -119,6 +119,22 @@
     font-size: 18px;
   }
 }
+
+.btn-explore-360 {
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  border: 1px solid #fff;
+  white-space: nowrap;
+  width: fit-content;
+}
+@media(min-width: 768px){
+  .btn-explore-360 {
+    bottom: 20px;
+  }
+}
+
 .modal {
   padding: 40px;
 }

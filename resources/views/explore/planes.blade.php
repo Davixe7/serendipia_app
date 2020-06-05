@@ -19,7 +19,7 @@
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <div v-for="n in 14" :key="n" class="carousel-item" :class="{active: currentIndex == n}">
-            <picture @click="lightboxIndex=1">
+            <picture @click="lightboxIndex=n-1">
               <source media="(min-width: 768px)" :srcset="`/img/aptos/explore/TIPO_${n}.png`">
               <img :src="`/img/aptos/separar/APTO_${n}.png`">
             </picture>
@@ -78,8 +78,8 @@ Vue.component('planes-details-box', {
     closeDetailModal(){
       jQuery('#detail-modal').modal('hide')
     },
-    detailUrl(floor, type){
-      return '/detalle-apartamento/?floor=' + `${floor+1}&type=${type}`
+    floorUrl(floor){
+      return '/separar-apartamento/seleccionar-apartamento/?floor=' + `${floor+1}`
     },
     onFloor(floor){
       if(this.type.available_in){
@@ -115,7 +115,7 @@ Vue.component('planes-details-box', {
     <span class="measure-title">Disponible en:</span>
     <div class="viewport-floors-list">
       <div v-for="n in 6" :class="{disabled: !onFloor(n+1) }">
-        <a :href="detailUrl(n,type.id)">
+        <a :href="floorUrl(n)">
           <div class="measure">
             Piso 0@{{n+1}} &nbsp;
             <span class="arrow-right-green"></span>

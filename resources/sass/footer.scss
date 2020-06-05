@@ -40,6 +40,14 @@
 @media(min-width: 768px){
   .custom-footer {
     display: flex;
+    justify-content: space-between;
+    .first-block, .last-block {
+      flex: 0 0 41.66%;
+    }
+    .last-block {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
   .custom-mobile-footer {
     display: none;

@@ -107,7 +107,7 @@
             <div class="cta-card">
               <div class="text"><b>¡Sepáralo ahora con $10’000.000</b> y recibe tu apartamento con los beneficios adicionales!</div>
               <div class="d-flex align-items-center">
-                <img src="/img/logos/logo-pse.png" alt="">
+                <img src="/img/logos/logo-payu.png" alt="">
                 <button type="button" class="btn btn-checkout ml-auto" data-toggle="modal" data-target="#terminos-modal">
                   <img src="/img/icons/icon-lock.png" class="mr-2" alt="">
                   Separar ahora

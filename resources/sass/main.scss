@@ -165,3 +165,25 @@ hr {
     margin-right: 0;
   }
 }
+
+// Static Pages
+#index, #about-us {
+  .custom-navbar .btn-reserve-yours {
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  .custom-navbar.with-btn .btn-reserve-yours {
+    opacity: 1;
+  }
+  .fixed-whatsapp-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 998;
+  }
+  @media(min-width: 768px){
+    .footer-socials .sidenav-socials {
+      margin-right: 50px;
+    }
+  }
+}

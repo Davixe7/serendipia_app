@@ -478,4 +478,28 @@ p {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+#index .custom-navbar .btn-reserve-yours,
+#about .custom-navbar .btn-reserve-yours {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#index .custom-navbar.with-btn .btn-reserve-yours,
+#about .custom-navbar.with-btn .btn-reserve-yours {
+  opacity: 1;
+}
+
+#index .fixed-whatsapp-btn,
+#about .fixed-whatsapp-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 998;
+}
+
+@media (min-width: 768px) {
+  #index .footer-socials .sidenav-socials,
+  #about .footer-socials .sidenav-socials {
+    margin-right: 50px;
+  }
+}

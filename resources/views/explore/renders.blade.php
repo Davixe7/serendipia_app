@@ -22,7 +22,7 @@
               <source media="(min-width: 1366px)" :srcset="`/img/aptos/renders/${currentItem.imgx3}`">
               <source media="(min-width: 768px)" :srcset="`/img/aptos/renders/${currentItem.imgx2}`">
               <source media="(min-width: 480px)" :srcset="`/img/aptos/renders/${currentItem.imgx1_5}`">
-              <img :src="`/img/aptos/renders/${currentItem.imgx1}`" class="w-md-100" @click="lightboxIndex=n">
+              <img :src="`/img/aptos/renders/${currentItem.imgx1}`" class="w-md-100" @click="lightboxIndex=n-1">
             </picture>
           </div>
         </div>
@@ -101,7 +101,7 @@ Vue.component('renders-details-box', {
 const app = new Vue({
   el: '#app',
   data(){return{
-    lightboxIndex: 0,
+    lightboxIndex: null,
     basePictureUrl: '/img/aptos/renders/',
     currentIndex: 1,
     activeNav: 'renders',
