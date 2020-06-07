@@ -81,7 +81,7 @@
             <table>
               <tr>
                 <td>Separación</td>
-                <td>$10'000.000</td>
+                <td>$5'000.000</td>
               </tr>
               <tr>
                 <td>Cuota inicial</td>

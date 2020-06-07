@@ -29,29 +29,32 @@
   align-items: center;
 }
 
-#carousel .carousel-caption {
+#carousel .custom-carousel-caption {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
   color: #f2f2f7;
+  text-align: center;
+  position: absolute;
+  z-index: 998;
   top: 0;
   left: 0;
   padding: 0 40px 60px;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
   box-sizing: border-box;
 }
 
-#carousel .carousel-caption .actions {
+#carousel .custom-carousel-caption .actions {
   margin: 0 -15px;
 }
 
-#carousel .carousel-caption > div {
+#carousel .custom-carousel-caption > div {
   max-width: 615px;
 }
 
-#carousel .carousel-caption h5 {
+#carousel .custom-carousel-caption h5 {
   font-size: 28px;
   font-weight: 700;
   line-height: normal;
@@ -61,7 +64,7 @@
   margin-bottom: 20px;
 }
 
-#carousel .carousel-caption p {
+#carousel .custom-carousel-caption p {
   font-size: 1.06666em;
   font-weight: 300;
   letter-spacing: 0;
@@ -76,6 +79,7 @@
   margin-bottom: 40px;
   justify-content: flex-start;
   align-items: center;
+  z-index: 999;
 }
 
 #carousel ol.carousel-indicators li {
@@ -109,13 +113,13 @@
 }
 
 @media (min-width: 576px) {
-  #carousel .carousel-caption {
+  #carousel .custom-carousel-caption {
     padding: 0 15px;
   }
-  #carousel .carousel-caption h5 {
+  #carousel .custom-carousel-caption h5 {
     font-size: 40px;
   }
-  #carousel .carousel-caption p {
+  #carousel .custom-carousel-caption p {
     font-size: 18px;
   }
 }

@@ -222,17 +222,14 @@
 .banner-about {
   font-size: 24px;
   font-weight: 700;
-  letter-spacing: normal;
-  color: #f2f2f7;
-  padding: 32px 0;
   line-height: 1.33;
-  background: #19191c;
+  letter-spacing: normal;
   color: #f2f2f7;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.33;
   letter-spacing: normal;
   color: #19191c;
@@ -252,16 +249,19 @@ p {
   box-sizing: border-box;
   margin: 0 auto;
 }
-
+.quote .content {
+  position: relative;
+  padding: 16px;
+}
 .quote p {
   font-size: 24px;
   font-weight: 300;
   line-height: normal;
   letter-spacing: normal;
   color: #131415;
-  margin-bottom: 0;
   z-index: 100;
   position: relative;
+  margin-bottom: 0;
 }
 
 .quote img {
@@ -269,15 +269,12 @@ p {
   z-index: 99;
 }
 
-.quote .content {
-  position: relative;
-  padding: 16px;
-}
-
 .quote .title {
   display: block;
   font-size: 12px;
   font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
   color: #19191c;
   padding: 0 16px;
 }
