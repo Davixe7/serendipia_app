@@ -71,19 +71,10 @@ Vue.component('renders-details-box', {
   },
   template: `
   <div>
-    <span class="measure-title">Electrodomésticos incluidos:</span>
-    <ul class="apartment-includes">
-      <li>Estufa eléctrica</li>
-      <li>Horno microondas</li>
-      <li>Extractor</li>
-      <li>Nevera</li>
-    </ul>
-    
     <span class="measure-title">Mobiliario incluido:</span>
     <ul class="apartment-includes">
       <li>Horno extractor</li>
       <li>Estufa eléctrica</li>
-      <li>Escritorio</li>
       <li>Cama aprox. 1,40 m</li>
       <li class="hl">Nevera</li>
       <li class="hl">Microondas</li>

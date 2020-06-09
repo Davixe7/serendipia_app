@@ -85,10 +85,7 @@
           <div class="row h-100">
             <div class="col-md-4">
               <div class="near-item">
-                <picture>
-                  <!-- <source media="(min-width:1367px)" srcset="/img/near/naturaleza@2x.jpg"> -->
-                  <img src="/img/near/naturaleza.jpg" alt="">
-                </picture>
+                <img src="/img/near/naturaleza@2x.jpg" alt="">
                 <div class="content">
                   <span class="title">Naturaleza</span>
                   <ul class="list">
@@ -113,10 +110,7 @@
             
             <div class="col-md-4">
               <div class="near-item">
-                <picture>
-                  <source media="(min-width:1367px)" srcset="/img/near/educacion@2x.jpg">
-                  <img src="/img/near/educacion.jpg" alt="">
-                </picture>
+                <img src="/img/near/educacion@2x.jpg" alt="">
                 <div class="content">
                   <span class="title">Educación</span>
                   <ul class="list">
@@ -131,10 +125,7 @@
             
             <div class="col-md-4">
               <div class="near-item">
-                <picture>
-                  <source media="(min-width:1367px)" srcset="/img/near/restaurantes@2x.jpg">
-                  <img src="/img/near/restaurantes.jpg" alt="">
-                </picture>
+                <img src="/img/near/restaurantes@2x.jpg" alt="">
                 <div class="content">
                   <span class="title">Restaurantes y cafés</span>
                   <p>
@@ -146,10 +137,7 @@
             
             <div class="col-md-4">
               <div class="near-item modal-toggler">
-                <picture>
-                  <source media="(min-width:1367px)" srcset="/img/near/vistarea@2x.jpg">
-                  <img src="/img/near/vistarea.jpg" alt="">
-                </picture>
+                <img src="/img/near/vistaarea@2x.jpg" alt="">
                 <div class="content" onclick="window.location.href='/get-360/?startscene=scene_location'">
                   <span class="title">Vista aérea</span>
                   <span class="icon zoom-icon"></span>
@@ -159,10 +147,7 @@
             
             <div class="col-md-4">
               <div class="near-item">
-                <picture>
-                  <source media="(min-width:1367px)" srcset="/img/near/centros-interes@2x.jpg">
-                  <img src="/img/near/centros-interes.jpg" alt="">
-                </picture>
+                <img src="/img/near/centros@2x.jpg" alt="">
                 <div class="content">
                   <span class="title">Centros de Interés</span>
                   <ul class="list">
