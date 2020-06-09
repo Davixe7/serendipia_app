@@ -100,12 +100,12 @@
             <source media="(min-width:576px)" srcset="/img/home/home-zonas-sociales@2x.jpg">
             <img src="/img/home/home-zonas-sociales.jpg" alt="" style="width: 100%;">
           </picture>
-          <a
+          <button onclick="window.location.href='/zonas-sociales-360'"
             style="display: inline-block; white-space: nowrap;"
             href="/zonas-sociales-360"
             class="btn btn-outline-default btn-explore-360">
             Explorar en 360°
-          </a>
+          </button>
         </div>
         <div class="col-md-4">
           <h2>Zonas sociales pensadas para que no te falte nada y tengas una vida productiva</h2>

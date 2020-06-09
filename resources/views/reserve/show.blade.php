@@ -65,7 +65,7 @@
               <li>Clóset</li>
               <li>Cama aprox. 1,40 m</li>
               <li>Baño dotado</li>
-              <li>Microondas *</li>
+              <li class="hl">Microondas</li>
               <li class="hl">Nevera</li>
               <li class="hl">Televisor 42’’</li>
               <li class="hl">Comedor</li>
