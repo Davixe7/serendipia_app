@@ -45,7 +45,7 @@
 <div id="index">
   @include('partials.sidenav')
   
-  <div id="navbar" class="custom-navbar">
+  <div id="navbar" class="custom-navbar index-navbar">
     <a class="custom-navbar-brand index" href="/"><img src="/img/logos/logo-serendipia.svg" alt="logo serendipia"></a>
     <div class="ml-auto d-inline-flex align-items-center">
       <a href="#" class="btn btn-reserve-yours mr-4">

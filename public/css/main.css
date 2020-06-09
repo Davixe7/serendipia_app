@@ -43,11 +43,13 @@
   align-items: center;
   max-height: 90px;
   padding: 30px 24px;
+  will-change: background-color;
+  transition: background-color 1s;
+}
+.custom-navbar.index-navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  will-change: background-color;
-  transition: background-color 1s;
 }
 .custom-navbar.bg-dark {
   background: #19191c !important;
