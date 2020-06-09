@@ -63,7 +63,6 @@
               <li>Estufa eléctrica</li>
               <li>Extractor</li>
               <li>Comedor 2 puestos</li>
-              <li>Escritorio</li>
               <li>Clóset</li>
               <li>Cama sencilla</li>
               <li>Baño dotado</li>
