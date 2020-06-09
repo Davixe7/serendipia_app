@@ -165,7 +165,7 @@
             <div class="col">
               <div class="form-group">
                 <label for="#">Tu número telefónico</label>
-                <input type="tel" class="form-control" name="phone" required>
+                <input type="tel" class="form-control" name="phone" placeholder="Celular" required>
               </div>
             </div>
           </div>
