@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Apartment extends Model
@@ -10,8 +11,17 @@ class Apartment extends Model
     'number', 'floor', 'type', 'initial_quota', 'monthly_quota', 'apt_value', 'finance_value', 'instalment', 'release_date', 'available'
   ];
   
+  protected $appends = [
+    'releases'
+  ];
+  
   public function type(){
     return $this->belongsTo('App\Type');
+  }
+  
+  public function getReleasesAttribute(){
+    setlocale(LC_TIME, 'Spanish');
+    return ucfirst(Carbon\Carbon::parse( $this->release_date )->formatLocalized('%B %Y'));
   }
 }
 

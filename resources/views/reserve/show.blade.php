@@ -97,7 +97,7 @@
               </tr>
               <tr>
                 <td>Fecha entrega</td>
-                <td>Sept. 2022</td>
+                <td>{{ $apartment->releases }}</td>
               </tr>
               <tr>
                 <td>Valor a financiar</td>

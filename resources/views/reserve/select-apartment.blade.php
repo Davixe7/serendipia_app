@@ -62,7 +62,7 @@
             <div>
               <span class="floor-name">Apto @{{ apt.number }}</span>
               <span v-if="apt.available" class="floor-available">
-                @{{ apt.type.built_area | asArea }} m<sup>2</sup> – $ @{{ apt.finance_value | asMoney }}
+                @{{ apt.type.built_area | asArea }} m<sup>2</sup> – $ @{{ apt.apt_value | asMoney }}
               </span>
               <span v-else class="floor-available">No disponible</span>
             </div>
