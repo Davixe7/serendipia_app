@@ -53,7 +53,6 @@ $(document).ready(function(){
   });
   
   $(window).scroll(function(){
-    console.log("Scrolled down");
     if ($(window).scrollTop() > 100){
       navbar.addClass( "bg-dark");
     }

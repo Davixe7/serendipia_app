@@ -1,0 +1,13 @@
+#shared {
+  
+}
+#shared-carousel img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 415px) and (min-height: 641px) {
+  #shared-carousel img {
+    width: auto;
+    min-width: 100%;
+  }
+}

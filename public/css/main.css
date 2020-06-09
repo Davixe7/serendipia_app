@@ -276,7 +276,7 @@ span.page-title:before {
     text-align: right;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 991px) {
   .custom-app-footer {
     flex-flow: row nowrap;
     text-align: left;
@@ -402,7 +402,7 @@ p {
   margin: 0 5px 0 7px;
 }
 
-.ad-banner .col-md-10, .ad-banner > .row {
+.ad-banner .col-lg-10, .ad-banner > .row {
   background-color: #19191c;
   background-image: url("./../img/lines.svg");
   background-repeat: no-repeat;
@@ -464,12 +464,12 @@ p {
     height: auto;
   }
 } */
-@media (min-width: 576px) {
+@media (min-width: 991px) {
   .no-wrap {
     white-space: nowrap;
   }
 
-  .ad-banner .col-md-10 {
+  .ad-banner .col-lg-10 {
     padding: 40px;
   }
 

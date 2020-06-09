@@ -49535,8 +49535,6 @@ $(document).ready(function () {
     event.preventDefault();
   });
   $(window).scroll(function () {
-    console.log("Scrolled down");
-
     if ($(window).scrollTop() > 100) {
       navbar.addClass("bg-dark");
     } else {

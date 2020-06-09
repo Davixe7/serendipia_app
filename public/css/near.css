@@ -25,6 +25,7 @@
   height: 100%;
   padding: 10px 32px;
   box-sizing: border-box;
+  transition: backdrop-filter .5s;
 }
 
 .near-item:hover .content {

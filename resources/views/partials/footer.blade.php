@@ -15,7 +15,7 @@
 
 <div class="custom-mobile-footer">
   <div>
-    <div class="d-sm-none mb-4">
+    <div class="d-lg-none mb-4">
       <a href="{{ route('reserve.selectFloor') }}" class="btn btn-reserve-yours">Separa el tuyo</a>
     </div>
     <span class="picture-disclaimer">

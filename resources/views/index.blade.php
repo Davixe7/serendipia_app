@@ -75,15 +75,15 @@
     </section>
     
     <div class="ad-banner">
-      <div class="col-md-10 mx-auto">
+      <div class="col-lg-10 mx-auto">
         <div class="row align-items-center">
-          <div class="col-md-4 title">
+          <div class="col-lg-4 title">
             ¡Invierte en el tuyo!
           </div>
-          <div class="col-md-5 caption pl-md-0">
+          <div class="col-lg-5 caption pl-lg-0">
             Comienza tu <b>inversión en línea</b> y recibe <span class="no-wrap">beneficios adicionales para tu apartamento.</span>
           </div>
-          <div class="col-md-3 text-md-right">
+          <div class="col-lg-3 text-md-right">
             <a href="{{ route('reserve.selectFloor') }}" class="btn btn-success">
               Separa el tuyo
             </a>
@@ -127,12 +127,12 @@
   <!-- Footer -->
   <footer>
     <div class="custom-app-footer">
-      <div class="col-6 col-md-4 mb-4 footer-brand">
+      <div class="col-6 col-lg-4 mb-4 footer-brand">
         <img src="/img/logos/logo-serendipia-footer.svg" alt="Serendipia" style="margin-right: 24px;">
         <span class="address"><span class="white">Chapinero</span> Calle 62 #3 - 18 / 24</span>
       </div>
       
-      <div class="col-6 col-md-4 order-sm-2 mb-4 footer-socials">
+      <div class="col-6 col-lg-4 order-lg-2 mb-4 footer-socials">
         <ul class="sidenav-socials">
           <li>
             <a target="_blank" href="https://www.instagram.com/serendipiaflats/?hl=es-la">
@@ -147,11 +147,11 @@
         </ul>
       </div>
       
-      <div class="d-sm-none col-md-12 mb-4 text-center">
+      <div class="col-12 d-lg-none mb-4 text-center">
         <span class="address"><span class="white">Chapinero</span> Calle 62 #3 - 18 / 24</span>
       </div>
       
-      <div class="col col-md-4 mx-auto footer-logos">
+      <div class="col-12 col-lg-4 mx-auto footer-logos">
         <div class="footer-logo-wrap">
           <span class="caption">Un proyecto:</span>
           <a href="https://www.fores.com.co/"><img src="/img/logos/logo-fores.png" alt=""></a>

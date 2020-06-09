@@ -11170,6 +11170,7 @@ hr {
   line-height: normal;
   letter-spacing: normal;
   color: #f2f2f7;
+  white-space: nowrap;
 }
 
 .page-title:before {
@@ -11191,7 +11192,7 @@ hr {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .custom-navbar {
     padding: 23px 40px;
   }
@@ -11309,6 +11310,10 @@ hr {
   display: flex;
 }
 
+.custom-mobile-footer > div {
+  flex: 1 1 auto;
+}
+
 .custom-mobile-footer .wa-me {
   width: 70px;
   text-align: center;
@@ -11348,7 +11353,7 @@ hr {
   color: #757577;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .custom-footer {
     display: flex;
     justify-content: space-between;
@@ -11406,10 +11411,6 @@ hr {
 .viewport-screen {
   text-align: center;
   background: #fff;
-}
-
-.viewport-screen img {
-  max-width: 100%;
 }
 
 .viewport-floors-list {
@@ -11524,7 +11525,6 @@ ul.apartment-includes {
 }
 
 .viewport-screen {
-  height: calc(100vh - 184px);
   overflow: hidden;
 }
 
@@ -11632,19 +11632,6 @@ ul.apartment-includes {
   background: #19191c;
 }
 
-#shared .viewport-screen .carousel img {
-  width: auto;
-  min-height: calc(100vh - 170px);
-}
-
-@media (min-width: 480px) {
-  #shared .viewport-screen img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-}
-
 #shared .viewport-item-title,
 #renders .viewport-item-title {
   color: #fff;
@@ -11660,6 +11647,47 @@ ul.apartment-includes {
 #renders .viewport-item-title-wrap .btn-details {
   border-color: #fff;
   color: #fff;
+}
+
+@media (orientation: landscape) {
+  #renders .viewport-screen img {
+    min-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-height: 854px) {
+  #renders .viewport-screen img {
+    min-height: 854px;
+    height: calc(100vh - 226px);
+  }
+}
+
+#shared-carousel img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 415px) and (min-height: 641px) {
+  #shared-carousel img {
+    width: auto;
+    min-width: 100%;
+  }
+}
+
+#renders-carousel img {
+  max-width: 100%;
+}
+
+#planes-carousel img {
+  max-width: 100%;
+}
+
+@media (max-width: 415px) {
+  #explore .viewport-screen {
+    padding-bottom: 80px;
+    background: #fff;
+  }
 }
 
 .hover-path {

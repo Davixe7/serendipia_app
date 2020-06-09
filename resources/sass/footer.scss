@@ -2,6 +2,9 @@
   padding: 10px 24px;
   display: flex;
 }
+.custom-mobile-footer > div {
+  flex: 1 1 auto;
+}
 .custom-mobile-footer .wa-me {
   width: 70px;
   text-align: center;
@@ -37,7 +40,7 @@
   color: #757577;
 }
 
-@media(min-width: 768px){
+@media(min-width: 991px){
   .custom-footer {
     display: flex;
     justify-content: space-between;

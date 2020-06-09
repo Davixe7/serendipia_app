@@ -15,7 +15,7 @@
 @endsection
 
 @section('mobile-slides-nav')
-<div class="text-center d-block d-sm-none" style="padding: 24px;">
+<div class="text-center d-block d-lg-none" style="padding: 24px;">
   @include('partials.slides-nav')
 </div>
 @endsection

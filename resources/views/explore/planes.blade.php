@@ -16,7 +16,7 @@
       <a href="#" class="btn-details ml-3" data-toggle="modal" data-target="#detail-modal">Detalle</a>
     </span>
     <div class="viewport-screen">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+      <div id="planes-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <div v-for="n in 14" :key="n" class="carousel-item" :class="{active: currentIndex == n}">
             <picture @click="lightboxIndex=n-1">

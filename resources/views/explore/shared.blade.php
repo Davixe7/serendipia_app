@@ -4,23 +4,24 @@
   <div class="viewport">
     <span class="viewport-item-title-wrap" v-if="currentItem.slug">
       <span class="viewport-item-title">@{{ currentItem.name }}</span>
-      <span class="ml-auto">
-        <a v-if="currentItem.slug != 'lavanderia'" :href="threeSixtyUrl + currentItem.scene" target="_blank" class="btn-details ml-auto">Explorar 360</a>
+      <span class="ml-auto text-right">
+        <a v-if="currentItem.slug != 'lavanderia'" :href="threeSixtyUrl + currentItem.scene" target="_blank" class="btn-details ml-auto mb-2">Explorar 360</a>
         <a href="#" class="btn-details" data-toggle="modal" data-target="#detail-modal">Detalle</a>
       </span>
     </span>
     <div class="viewport-screen">
-      <div v-if="currentItem.slug" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+      <div v-if="currentItem.slug" id="shared-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <div v-for="(item,n) in items" :key="n" class="carousel-item" :class="{active: currentIndex == n+1}">
             <picture @click="lightboxIndex=n">
-              <source media="(min-width:768px)" :srcset="`./img/aptos/areas/${currentItem.img}`">
-              <img :src="`./img/aptos/areas/${currentItem.slug}@1x.jpg`" class="d-block">
+              <source media="(min-width: 1367px), (min-height: 854px)" :srcset="`/img/aptos/areas/test/${item.slug}@3x.png`">
+              <source media="(min-width: 576px), (min-height: 738px) and orientation(landscape)" :srcset="`/img/aptos/areas/test/${item.slug}@2x.jpg`">
+              <img :src="`/img/aptos/areas/test/${item.slug}@1x.jpg`" alt="">
             </picture>
           </div>
         </div>
       </div>
-      <div :class="{'d-none': currentIndex != 5}" v-show="currentIndex == 5">
+      <div style="display: none;" :class="{'d-none': currentIndex != 5}" v-show="currentIndex == 5">
         @include('cinco')
       </div>
     </div>

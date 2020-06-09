@@ -15,7 +15,7 @@
       <a href="#" class="btn-details" data-toggle="modal" data-target="#detail-modal">Detalle</a>
     </span>
     <div class="viewport-screen">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+      <div id="renders-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <div v-for="n in 3" :key="n" class="carousel-item" :class="{active: currentIndex == n}">
             <picture>
@@ -24,10 +24,10 @@
               <source media="(min-width: 480px)" :srcset="`/img/aptos/renders/${currentItem.imgx1_5}`">
               <img :src="`/img/aptos/renders/${currentItem.imgx1}`" class="w-md-100" @click="lightboxIndex=n-1">
             </picture>
+            <div class="bottom-shade" @click="lightboxIndex=n-1"></div>
           </div>
         </div>
       </div>
-      <div class="bottom-shade"></div>
     </div>
     <div class="viewport-details-box" v-if="currentItem && currentItem.name != 'Fachada'">
       <renders-details-box :currentItem="currentItem"/>
