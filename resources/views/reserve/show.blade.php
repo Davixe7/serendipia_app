@@ -167,6 +167,7 @@
           <hr>
           
           <div class="modal-text">
+            <span class="terms-title">Términos y condiciones</span>
             <p>1. De no recibir el valor de la separación en la fecha establecida Formas y Espacios dispondrá automáticamente del inmueble de esta cotización 2. Una vez realizada la consignación o transferencia de la separación se dispone de ocho (8) días calendario para realizar el cierre de venta en la sala de negocios ubicada en la Diagonal 115ª 70f-29 en la ciudad de Bogota; de lo contrario Formas y Espacios dispondrá automáticamente del inmueble. 3. El área total construida incluye columnas, muros comunes y buitrones del inmueble. El área privada podrá tener variaciones menores por cambios estructurales. Ambas áreas son aproximadas y podrían tener variaciones menores durante la etapa de construcción. 4. Los precios cotizados podrían variar en cualquier momento. Esta cotización es válida únicamente por el inmueble cotizado. Su vigencia es válida solamente si el cliente manifiesta que va a realizar la separación del inmueble. 5. Entiendo y acepto que de realizar una separación sobre un inmueble de este proyecto estoy obligado a vincularme a la fiduciaria del proyecto. 6. Entiendo y acepto que mi vinculación efectiva está sujeta a la validación por parte de ACCION FIDUCIARIA en las listas de control SARLAFT. 7. Las dimensiones mínimas de los parqueaderos comunales y visitantes son de 2.20 M de ancho por 4.70 M de largo. 8. El valor total de esta cotización NO incluye parqueaderos ni deposito. 9. Al recibir esta cotización autorizo a Formas y Espacios al manejo de mi información personal dentro de sus bases de datos.
             </p>
           </div>
@@ -218,12 +219,22 @@ const app = new Vue({
     letter-spacing: normal;
     color: #0f0f10;
   }
+  #terminos-modal .terms-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: #19191c; 
+    margin-bottom: 10px;
+  }
   #terminos-modal .form-control,
   #terminos-modal hr {
-    border-color: #979797;
+    border-color: #97979799;
   }
   #terminos-modal .form-control {
     border-radius: 0;
+    background: #f2f2f7;
   }
   #terminos-modal hr {
     margin-top: 15px;
