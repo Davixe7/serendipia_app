@@ -64,4 +64,8 @@ class ApartmentController extends Controller
       $apartment = Apartment::first();
       return view('reserve.thankyou', ['apartment'=>$apartment, 'page_title'=>'']);
     }
+    
+    public function reserve(Request $request){
+      return view('reserve.show');
+    }
 }

@@ -105,4 +105,19 @@ const app = new Vue({
   }
 })
 </script>
+<style>
+  .btn-reserve-yours {
+    display: none !important;
+  }
+  .wa-me {
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+  }
+  @media(min-width: 769px){
+    .wa-me {
+      position: relative;
+    }
+  }
+</style>
 @endsection

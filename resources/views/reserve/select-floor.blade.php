@@ -44,7 +44,7 @@
               <span v-else="floor.available" class="floor-available">No disponible</span>
             </div>
             <span v-if="floor.available" class="action">
-              <span class="arrow arrow-right-green"></span>
+              <a :href="`/separar-apartamento/seleccionar-apartamento/?floor=${floor.floor}`" class="arrow arrow-right-green"></a>
               <a :href="`/separar-apartamento/seleccionar-apartamento/?floor=${floor.floor}`" class="btn btn-outline-success align-items-center">
                 <div>Explorar piso</div>
                 <div class="ml-3">
@@ -82,4 +82,19 @@ const app = new Vue({
   }
 })
 </script>
+<style>
+  .btn-reserve-yours {
+    display: none !important;
+  }
+  .wa-me {
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+  }
+  @media(min-width: 769px){
+    .wa-me {
+      position: relative;
+    }
+  }
+</style>
 @endsection
