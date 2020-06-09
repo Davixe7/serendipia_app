@@ -150,7 +150,7 @@
         <div class="modal-body" style="background: #f2f2f7;">
           <h4>Estás a un paso de separar tu apartamento</h4>
           <div class="row">
-            <div class="col">
+            <div class="col-12">
               <div class="form-group">
                 <label for="#">Tu nombre completo</label>
                 <input type="text" class="form-control" name="name" placeholder="Nombres y Apellidos" required>
@@ -160,6 +160,12 @@
               <div class="form-group">
                 <label for="#">Tu correo electrónico</label>
                 <input type="email" class="form-control" name="email" placeholder="correo@mail.com" required>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="#">Tu número telefónico</label>
+                <input type="tel" class="form-control" name="phone" required>
               </div>
             </div>
           </div>
