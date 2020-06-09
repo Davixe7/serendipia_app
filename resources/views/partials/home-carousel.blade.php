@@ -10,10 +10,10 @@
       <h5>Mi lugar favorito es <span class="modal-toggler" data-toggle="modal" data-target="#exampleModal">Serendipia</span></h5>
       <p>Llega a Bogotá la oportunidad de tener apartamentos de calidad con todo lo que necesitas, en zonas exclusivas y al mejor precio.</p>
       <div class="actions">
-        <a href="#" class="btn btn-outline mr-2">
+        <button type="button" class="btn btn-outline mr-2" data-toggle="modal" data-target="#video-modal">
           <span class="play-icon mr-1"></span>
           Ver video
-        </a>
+        </button>
         <a href="{{ route('reserve.selectFloor') }}" class="btn btn-success">Separa el tuyo</a>
       </div>
     </div>

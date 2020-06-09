@@ -170,7 +170,7 @@
   
   <!-- Modal -->
   <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <div class="modal-nav">
@@ -185,6 +185,17 @@
             <img src="/img/icons/quotation-mark.svg" alt="" style="width: 34px; top: 0; left: 0;">
             <img src="/img/icons/quotation-mark.svg" alt="" style="width: 34px; bottom: 8px; right: 40px; transform: rotateZ(180deg);">
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="video-modal">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-center">
+          <iframe src="https://drive.google.com/file/d/1din_KPOHAsgbHIhD643u17AoGDBDp74g/preview" width="640" height="480" style="max-width: 100%;"></iframe>
         </div>
       </div>
     </div>

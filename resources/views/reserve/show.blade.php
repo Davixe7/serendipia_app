@@ -123,6 +123,8 @@
   <vue-cool-lightbox
     :items="pictures"
     :index="lightboxIndex"
+    :fullScreen="true"
+    :useZoomBar="true"
     @close="lightboxIndex = null"
   />
 </div>

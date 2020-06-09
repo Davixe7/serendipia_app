@@ -11,6 +11,10 @@ class Apartment extends Model
     'number', 'floor', 'type', 'initial_quota', 'monthly_quota', 'apt_value', 'finance_value', 'instalment', 'release_date', 'available'
   ];
   
+  protected $casts = [
+    'available' => 'integer'
+  ];
+  
   protected $appends = [
     'releases'
   ];
