@@ -58,7 +58,7 @@
           <li
             v-for="(apt,n) in apartments"
             :class="{active: activeApt==n, disabled: !apt.available}"
-            @mouseover="if( apt.available ){ activeApt = n }">
+            @mouseover="()=>{ if( apt.available ){ activeApt = n } }">
             <div>
               <span class="floor-name">Apto @{{ apt.number }}</span>
               <span v-if="apt.available" class="floor-available">
