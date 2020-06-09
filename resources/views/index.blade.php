@@ -212,7 +212,7 @@
   
   <!-- Modal -->
   <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
-    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <div class="modal-nav">
