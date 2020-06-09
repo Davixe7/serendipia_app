@@ -62,13 +62,13 @@
             <ul class="apartment-includes">
               <li>Estufa eléctrica</li>
               <li>Extractor</li>
-              <li>Comedor 2 puestos</li>
               <li>Clóset</li>
-              <li>Cama sencilla</li>
+              <li>Cama aprox. 1,40 m</li>
               <li>Baño dotado</li>
-              <li class="hl">Horno microondas</li>
+              <li>Microondas *</li>
               <li class="hl">Nevera</li>
-              <li class="hl">TV de 40 pulgadas</li>
+              <li class="hl">Televisor 42’’</li>
+              <li class="hl">Comedor</li>
             </ul>
             <div class="online-promo">
               * Beneficios disponibles haciendo reserva en línea
