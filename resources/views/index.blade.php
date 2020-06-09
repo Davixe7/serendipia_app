@@ -12,7 +12,13 @@
   <link href="{{ asset('css/main.css') }}" rel="stylesheet">
   <link href="{{ asset('css/index.css') }}" rel="stylesheet">
   <style>
-    
+  #video-modal .modal-content,
+  #video-modal .modal-dialog
+  #video-modal .modal-body {
+    border: none;
+    background: none;
+  }
+  
   @media(max-width: 768px){
     #video-modal, #video-modal .modal-body {
       padding: 0 !important;
@@ -27,27 +33,21 @@
     }
   }
   
-  #video-modal .modal-content,
-  #video-modal .modal-dialog
-  #video-modal .modal-body {
-    border: none;
-    background: none;
-  }
   #video-modal .modal-dialog {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
   }
-  #video-modal .modal-body {
-    padding: 15px;
-  }
-  #video-modal .modal-content {
-    height: auto;
-    min-height: 100%;
-    border-radius: 0;
-  }
   @media (min-width: 576px){
+    #video-modal .modal-body {
+      padding: 15px;
+    }
+    #video-modal .modal-content {
+      height: auto;
+      min-height: 100%;
+      border-radius: 0;
+    }
     #video-modal .modal-dialog {
       max-width: 100%;
     }
@@ -234,7 +234,7 @@
   
   <!-- Modal -->
   <div class="modal fade" tabindex="-1" role="dialog" id="video-modal">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <!-- <div class="modal-body d-flex justify-content-center">
           <video controls>
