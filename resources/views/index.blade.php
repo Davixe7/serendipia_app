@@ -12,6 +12,20 @@
   <link href="{{ asset('css/main.css') }}" rel="stylesheet">
   <link href="{{ asset('css/index.css') }}" rel="stylesheet">
   <style>
+    
+  @media(max-width: 768px){
+    #video-modal, #video-modal .modal-body {
+      padding: 0;
+    }
+    #video-modal .modal-body > div {
+      width: 100%;
+    }
+    #video-modal .modal-body > iframe {
+      width: 100% !important;
+      height: 320px;
+    }
+  }
+  
   #video-modal .modal-content,
   #video-modal .modal-dialog
   #video-modal .modal-body {
