@@ -130,8 +130,9 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12 text-center">
-                <img src="/img/group-17.jpg" alt="">
+              <div class="col-md-8 mx-auto">
+                <!-- <img src="/img/group-17.jpg" alt=""> -->
+                <iframe width="100%" height="540px" src="https://www.youtube.com/embed/EzfTwYCpEjU" frameborder="0"></iframe>
               </div>
             </div>
             <div class="row">
