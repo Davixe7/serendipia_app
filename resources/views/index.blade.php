@@ -12,6 +12,12 @@
   <link href="{{ asset('css/main.css') }}" rel="stylesheet">
   <link href="{{ asset('css/index.css') }}" rel="stylesheet">
   <style>
+  #video-modal .modal-content,
+  #video-modal .modal-dialog
+  #video-modal .modal-body {
+    border: none;
+    background: none;
+  }
   #video-modal .modal-dialog {
     width: 100%;
     height: 100%;
@@ -223,7 +229,7 @@
         <div class="modal-body">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <div>
-            <iframe width="100%" style="height:calc(100vh - 80px);"></iframe>
+            <iframe width="100%" style="height:calc(100vh - 140px);" frameborder="0"></iframe>
           </div>
         </div>
       </div>
