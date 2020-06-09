@@ -48,6 +48,13 @@
       .feature span {
         display: inline-block;
       }
+      @media(max-width: 768px){
+        iframe {
+          width: 100% !important;
+          min-width: 100%;
+          height: calc(100vw * .5625);
+        }
+      }
     </style>
   </head>
   <body>
@@ -132,7 +139,7 @@
             <div class="row">
               <div class="col-md-12 mx-auto d-flex justify-content-center">
                 <!-- <img src="/img/group-17.jpg" alt=""> -->
-                <iframe width="960px" height="540px" style="max-width: 100%;" src="https://www.youtube.com/embed/EzfTwYCpEjU" frameborder="0"></iframe>
+                <iframe width="960px" height="540px" style="max-width: 100%;" src="https://www.youtube.com/embed/J7Q3e9c0kUw" frameborder="0"></iframe>
               </div>
             </div>
             <div class="row">

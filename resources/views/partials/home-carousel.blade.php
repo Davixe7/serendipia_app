@@ -10,7 +10,7 @@
       <h5>Mi lugar favorito es <span class="modal-toggler" data-toggle="modal" data-target="#exampleModal">Serendipia</span></h5>
       <p>Llega a Bogotá la oportunidad de tener apartamentos de calidad con todo lo que necesitas, en zonas exclusivas y al mejor precio.</p>
       <div class="actions">
-        <button id="video-toggler" type="button" class="btn btn-outline mr-2" data-toggle="modal" data-target="#video-modal" data-theVideo="https://www.youtube.com/embed/EzfTwYCpEjU">
+        <button id="video-toggler" type="button" class="btn btn-outline mr-2" data-toggle="modal" data-target="#video-modal" data-theVideo="https://www.youtube.com/embed/J7Q3e9c0kUw">
           <span class="play-icon mr-1"></span>
           Ver video
         </button>
