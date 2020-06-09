@@ -227,8 +227,10 @@
           </video>
         </div> -->
         <div class="modal-body d-flex justify-content-center">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <div>
+          <div style="padding-top: 40px; position: relative;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="position: absolute; top: 0; right: 0;">
+              <span class="close-white"></span>
+            </button>
             <iframe width="960px" height="540px" style="max-width: 100%;" frameborder="0"></iframe>
           </div>
         </div>
