@@ -226,10 +226,10 @@
             <source src="https://drive.google.com/uc?id=1din_KPOHAsgbHIhD643u17AoGDBDp74g">
           </video>
         </div> -->
-        <div class="modal-body">
+        <div class="modal-body d-flex justify-content-center">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <div>
-            <iframe width="100%" style="height:calc(100vh - 140px);" frameborder="0"></iframe>
+            <iframe width="960px" height="540px" style="max-width: 100%;" frameborder="0"></iframe>
           </div>
         </div>
       </div>
