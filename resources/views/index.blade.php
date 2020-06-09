@@ -15,14 +15,16 @@
     
   @media(max-width: 768px){
     #video-modal, #video-modal .modal-body {
-      padding: 0;
+      padding: 0 !important;
     }
     #video-modal .modal-body > div {
       width: 100%;
     }
-    #video-modal .modal-body > iframe {
+    #video-modal .modal-body iframe {
       width: 100% !important;
-      height: 320px;
+      min-width: 100%;
+      min-height: 320px;
+      height: auto;
     }
   }
   
