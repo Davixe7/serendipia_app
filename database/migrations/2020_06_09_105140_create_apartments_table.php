@@ -26,6 +26,9 @@ class CreateApartmentsTable extends Migration
             $table->integer('monthly_quota')->default(0);
             $table->integer('instalment');
             $table->date('release_date');
+            
+            $table->unsignedBigInteger('owner_id')->nullable();
+            $table->foreign('owner_id')->references('id')->on('owners')->onDelete('set null');
         });
     }
 

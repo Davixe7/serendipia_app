@@ -14,9 +14,9 @@
         <div class="carousel-inner">
           <div v-for="(item,n) in items" :key="n" class="carousel-item" :class="{active: currentIndex == n+1}">
             <picture @click="lightboxIndex=n">
-              <source media="(min-width: 1367px), (min-height: 854px)" :srcset="`/img/aptos/areas/test/${item.slug}@3x.png`">
-              <source media="(min-width: 576px), (min-height: 738px) and orientation(landscape)" :srcset="`/img/aptos/areas/test/${item.slug}@2x.jpg`">
-              <img :src="`/img/aptos/areas/test/${item.slug}@1x.jpg`" alt="">
+              <source media="(min-width: 1367px), (min-height: 854px)" :srcset="`/img/aptos/areas/${item.slug}@3x.png`">
+              <source media="(min-width: 576px), (min-height: 738px) and orientation(landscape)" :srcset="`/img/aptos/areas/${item.slug}@2x.jpg`">
+              <img :src="`/img/aptos/areas/${item.slug}@1x.jpg`" alt="">
             </picture>
           </div>
         </div>
@@ -178,7 +178,7 @@ const app = new Vue({
 <style>
   #cinco {
     padding: 20px 0;
-    background: url('/img/aptos/areas/cinco@3x.png');
+    background: url('/img/aptos/areas/5@3x.png');
     background-size: cover;
   }
   .shared-sections-cards {
@@ -195,6 +195,7 @@ const app = new Vue({
     backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.8);
     margin-right: 31px;
+    margin-bottom: 20px;
     text-align: left !important;
   }
   .shared-section-card img {
