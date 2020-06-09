@@ -23,8 +23,7 @@
     #video-modal .modal-body iframe {
       width: 100% !important;
       min-width: 100%;
-      min-height: 320px;
-      height: auto;
+      height: calc(100vw * .5625);
     }
   }
   
