@@ -101,6 +101,7 @@
             <img src="/img/home/home-zonas-sociales.jpg" alt="" style="width: 100%;">
           </picture>
           <a
+            style="display: inline-block; white-space: nowrap;"
             href="/zonas-sociales-360"
             class="btn btn-outline-default btn-explore-360">
             Explorar en 360°
