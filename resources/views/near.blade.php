@@ -100,7 +100,7 @@
             
             <div class="col-md-4">
               <div class="near-item modal-toggler">
-                <img src="/img/rectangle-mapa.jpg" alt="">
+                <img src="/img/near/mapa.jpg" alt="">
                 <div class="content" data-toggle="modal" data-target="#exampleModal">
                   <span class="title">Mapa de Ubicación</span>
                   <span class="icon zoom-icon"></span>
@@ -169,7 +169,7 @@
                   <span class="close-white" class="close" data-dismiss="modal" aria-label="Close"></span>
                 </div>
                 <div class="modal-body">
-                  <img src="/img/mapa-modal.jpg" alt="#">
+                  <img src="/img/near/mapa-modal.jpg" alt="#">
                 </div>
               </div>
             </div>
@@ -209,7 +209,7 @@
                 </div>
                 <div class="footer-logo-wrap whatsapp">
                   <a style="color: #fff;" href="https://api.whatsapp.com/send?phone=+573174857023&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia.">
-                    <img src="/img/whatsapp.png" alt="">
+                    <img src="/img/logos/whatsapp.png" alt="">
                   </a>
                 </div>
               </div>
@@ -228,7 +228,7 @@
               </div>
               <div class="wa-me">
                 <a href="https://api.whatsapp.com/send?phone=+573174857023&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia.">
-                  <img src="/img/whatsapp.png" alt="">
+                  <img src="/img/logos/whatsapp.png" alt="">
                 </a>
               </div>
             </div>

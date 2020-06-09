@@ -184,7 +184,7 @@
                 </div>
                 
                 <div class="secure-payment-advice">
-                  <img src="/img/lock.png" alt="" class="mr-2">
+                  <img src="/img/icons/lock.png" alt="" class="mr-2">
                   <span class="mr-3">Tus pagos están protegidos con</span>
                   <img src="/img/logos/logo-payu.png" alt="">
                 </div>
@@ -197,53 +197,45 @@
           </div>
         </div>
         
-        <!-- FOOTER -->
-        
-        <footer style="background: #19191c; padding: 20px 40px;">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-6 col-md-4 mb-4 footer-brand">
-                <img src="/img/logos/logo-serendipia-footer.svg" alt="Serendipia" style="margin-right: 24px;">
-                <div class="d-none d-sm-inline-block">
-                  Chapinero &nbsp;
-                </div>
-                <div class="d-none d-sm-inline-block">
-                  <span class="address">Calle 62 #3 - 18 / 24</span>
-                </div>
+        <!-- Footer -->
+        <footer>
+          <div class="custom-app-footer">
+            <div class="col-6 col-lg-4 mb-4 footer-brand">
+              <img src="/img/logos/logo-serendipia-footer.svg" alt="Serendipia" style="margin-right: 24px;">
+              <span class="address"><span class="white">Chapinero</span> Calle 62 #3 - 18 / 24</span>
+            </div>
+            
+            <div class="col-6 col-lg-4 order-lg-2 mb-4 footer-socials">
+              <ul class="sidenav-socials">
+                <li>
+                  <a target="_blank" href="https://www.instagram.com/serendipiaflats/?hl=es-la">
+                    <span class="instagram-icon"></span>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.facebook.com/Serendipia-111088827252397/?modal=admin_todo_tour">
+                    <span class="facebook-icon"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-12 d-lg-none mb-4 text-center">
+              <span class="address"><span class="white">Chapinero</span> Calle 62 #3 - 18 / 24</span>
+            </div>
+            
+            <div class="col-12 col-lg-4 mx-auto footer-logos">
+              <div class="footer-logo-wrap">
+                <span class="caption">Un proyecto:</span>
+                <a href="https://www.fores.com.co/"><img src="/img/logos/logo-fores.png" alt=""></a>
               </div>
-              
-              <div class="col-6 col-md-4 order-sm-2 mb-4 footer-socials">
-                <ul class="sidenav-socials">
-                  <li>
-                    <a target="_blank" href="https://www.instagram.com/serendipiaflats/?hl=es-la">
-                      <span class="instagram-icon"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="https://www.facebook.com/Serendipia-111088827252397/?modal=admin_todo_tour">
-                      <span class="facebook-icon"></span>
-                    </a>
-                  </li>
-                </ul>
+              <div class="footer-logo-wrap">
+                <span class="caption">Diseño por:</span>
+                <a href="http://hmaproyectos.com/"><img src="/img/logos/logo-hma.svg" alt=""></a>
               </div>
-              
-              <div class="col-md-12 d-sm-none mb-4 text-center">
-                Chapinero <span class="address">Calle 62 #3 - 18 / 24</span>
-              </div>
-              
-              <div class="col col-md-4 mx-auto footer-logos">
-                <div class="footer-logo-wrap">
-                  <span class="caption">Un proyecto:</span>
-                  <a href="https://www.fores.com.co/"><img src="/img/logos/logo-fores.png" alt=""></a>
-                </div>
-                <div class="footer-logo-wrap">
-                  <span class="caption">Diseño por:</span>
-                  <a href="http://hmaproyectos.com/"><img src="/img/logos/logo-hma.svg" alt=""></a>
-                </div>
-                <div class="footer-logo-wrap">
-                  <span class="caption">Fiduciaria:</span>
-                  <a href="https://www.accion.com.co/"><img src="/img/logos/logo-accion-fiduciaria.png" alt=""></a>
-                </div>
+              <div class="footer-logo-wrap">
+                <span class="caption">Fiduciaria:</span>
+                <a href="https://www.accion.com.co/"><img src="/img/logos/logo-accion-fiduciaria.png" alt=""></a>
               </div>
             </div>
           </div>
@@ -251,7 +243,7 @@
         
         <span class="fixed-whatsapp-btn">
           <a href="https://api.whatsapp.com/send?phone=+573174857023&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia." target="_blank">
-            <img src="/img/whatsapp.png" alt="whatsapp" style="width: 40px; height: 40px;">
+            <img src="/img/logos/whatsapp.png" alt="whatsapp" style="width: 40px; height: 40px;">
           </a>
         </span>
       </div>
