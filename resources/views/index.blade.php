@@ -12,6 +12,28 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link href="{{ asset('css/main.css') }}" rel="stylesheet">
   <link href="{{ asset('css/index.css') }}" rel="stylesheet">
+  <style>
+  #video-modal .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #video-modal .modal-body {
+    padding: 15px;
+  }
+  #video-modal .modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }
+  @media (min-width: 576px){
+    #video-modal .modal-dialog {
+      max-width: 100%;
+    }
+  }
+
+</style>
 </head>
 <body>
 <div id="app">
@@ -192,10 +214,10 @@
   
   <!-- Modal -->
   <div class="modal fade" tabindex="-1" role="dialog" id="video-modal">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body d-flex justify-content-center">
-          <iframe src="https://drive.google.com/file/d/1din_KPOHAsgbHIhD643u17AoGDBDp74g/preview" width="640" height="480" style="max-width: 100%;"></iframe>
+          <iframe src="https://drive.google.com/file/d/1din_KPOHAsgbHIhD643u17AoGDBDp74g/preview" width="100%" height="auto" style="max-width: 100%;"></iframe>
         </div>
       </div>
     </div>
