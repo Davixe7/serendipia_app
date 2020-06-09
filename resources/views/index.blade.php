@@ -6,7 +6,6 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>{{ config('app.name', 'Laravel') }}</title>
   <link rel="icon" href="/img/icons/favicon.svg">
-  <script src="{{ asset('js/app.js') }}" defer></script>
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Chivo:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -216,20 +215,29 @@
   <div class="modal fade" tabindex="-1" role="dialog" id="video-modal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-body d-flex justify-content-center">
-          <iframe src="https://drive.google.com/file/d/1din_KPOHAsgbHIhD643u17AoGDBDp74g/preview" width="100%" height="auto" style="max-width: 100%;"></iframe>
+        <!-- <div class="modal-body d-flex justify-content-center">
+          <video controls>
+            <source src="https://drive.google.com/uc?id=1din_KPOHAsgbHIhD643u17AoGDBDp74g">
+          </video>
+        </div> -->
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div>
+            <iframe width="100%" style="height:calc(100vh - 80px);"></iframe>
+          </div>
         </div>
       </div>
     </div>
   </div>
   
   <span class="fixed-whatsapp-btn">
-    <a href="https://api.whatsapp.com/send?phone=+573174857023&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia." target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+573175323068&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia." target="_blank">
       <img src="/img/logos/whatsapp.png" alt="whatsapp" style="width: 40px; height: 40px;">
     </a>
   </span>
 </div>
-</div>  
+</div>
+<script src="{{ asset('js/app.js') }}"></script>
 <script>
   const modalNavLinks = document.querySelectorAll('.modal-nav span')
   const paragraphs = document.querySelector('.modal-body .quoute p')
@@ -241,6 +249,22 @@
       document.querySelector( '.quote p.d-block' ).classList.remove('d-block')
       document.querySelector( e.target.getAttribute('data-target') ).classList.add('d-block')          
     });
+  });
+  
+  $(document).ready(function(){
+    autoPlayYouTubeModal();
+    function autoPlayYouTubeModal() {
+      var trigger = $("#video-toggler");
+      trigger.click(function () {
+        var theModal = $(this).data("target"),
+        videoSRC = $(this).attr("data-theVideo"),
+        videoSRCauto = videoSRC + "?autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    }
   });
 </script>
 </body>

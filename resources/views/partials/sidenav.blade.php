@@ -42,11 +42,11 @@
     <div class="whatsapp-number">
       <a
           style="color: #fff;"
-          href="https://api.whatsapp.com/send?phone=+573174857023&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia."
+          href="https://api.whatsapp.com/send?phone=+573175323068&text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20de%20Serendipia."
           target="_blank">
           <img src="/img/logos/whatsapp.png" alt="">
           <span class="number">
-            +(57)3174857023
+            +(57)3175323068
           </span>
       </a>
     </div>
