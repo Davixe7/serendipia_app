@@ -77,9 +77,9 @@ class PaymentController extends Controller
   }
   
   public function checkoutResponse(Request $request){
-    $order = Order::whereReferenceCode( $request->referenceCode )->get();
+    $order = Order::whereReferenceCode( $request->referenceCode )->first();
     if( $order ){
-      $owner = Owner::whereEmail($order->buyerEmail)->get();
+      $owner = Owner::whereEmail($order->buyer_email)->get();
       $order->update([
         'status' => $request->transactionStatus
       ]);
