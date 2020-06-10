@@ -101,7 +101,7 @@
             <img src="/img/home/home-zonas-sociales.jpg" alt="" style="width: 100%;">
           </picture>
           <button onclick="window.location.href='/zonas-sociales-360'"
-            style="display: inline-block; white-space: nowrap;"
+            style="display: inline-block; white-space: nowrap; min-width: 150px;"
             href="/zonas-sociales-360"
             class="btn btn-outline-default btn-explore-360">
             Explorar en 360°

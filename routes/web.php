@@ -66,3 +66,8 @@ Route::get('tipos', function(){
   return response()->json(['data'=>App\Type::all()]);
   return App\Http\Resources\Type::collection( App\Type::all() );
 });
+
+
+Route::post('validate-checkout-form', 'PaymentController@validateForm');
+Route::post('checkout-response', 'PaymentController@checkoutResponse');
+Route::post('checkout-confirm', 'PaymentController@checkoutConfirm');

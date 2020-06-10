@@ -143,30 +143,32 @@
 </div>
 
 <!-- Modal Plano-->
-<div class="modal fade" id="terminos-modal" tabindex="-1" role="dialog" aria-labelledby="plane-modalTitle" aria-hidden="true">
+<div class="modal fade" id="terminos-modal" tabindex="-1" role="dialog" aria-labelledby="plane-modalTitle" aria-hidden="true" :disabled="validating">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content" style="background: none;">
-      <form action="{{ route('reserve-apartment') }}" method="POST">
-        @csrf
+      <form @submit.prevent="validateForm">
         <div class="modal-body" style="background: #f2f2f7;">
           <h4>Estás a un paso de separar tu apartamento</h4>
           <div class="row">
             <div class="col-12">
               <div class="form-group">
                 <label for="#">Tu nombre completo</label>
-                <input type="text" class="form-control" name="name" placeholder="Nombres y Apellidos" required>
+                <input type="text" class="form-control" :class="{'is-invalid': errors.name, disabled:validating}" placeholder="Nombres y Apellidos" v-model="name" required :disabled="validating">
+                <span v-if="errors.name" class="invalid-feedback">@{{ errors.name[0] }}</span>
               </div>
             </div>
             <div class="col">
               <div class="form-group">
                 <label for="#">Tu correo electrónico</label>
-                <input type="email" class="form-control" name="email" placeholder="correo@mail.com" required>
+                <input type="email" class="form-control" :class="{'is-invalid': errors.email, disabled:validating}" placeholder="correo@mail.com" v-model="email" required :disabled="validating">
+                <span v-if="errors.email" class="invalid-feedback">@{{ errors.email[0] }}</span>
               </div>
             </div>
             <div class="col">
               <div class="form-group">
                 <label for="#">Tu número telefónico</label>
-                <input type="tel" class="form-control" name="phone" placeholder="Celular" required>
+                <input type="tel" class="form-control" :class="{'is-invalid': errors.phone, disabled:validating}" placeholder="Celular" v-model="phone" required :disabled="validating">
+                <span v-if="errors.phone" class="invalid-feedback">@{{ errors.phone[0] }}</span>
               </div>
             </div>
           </div>
@@ -180,8 +182,15 @@
           </div>
         </div>
         <div class="modal-footer d-flex align-items-center justify-content-end">
-          <button href="/separar-apartamento/gracias" class="btn btn-success">Continuar a PayU</button>
+          <button type="submit" class="btn btn-success d-inline-flex align-items-center" :disabled="validating">
+            Continuar a PayU
+            <span class="spinner-border spinner-border-sm ml-2" v-show="validating"></span>
+          </button>
         </div>
+      </form>
+      
+      <form v-if="formFieldsNames" :action="formUrl" ref="hiddenForm" method="POST">
+        <input v-for="(field,n) in formFields" :value="field" :name="n" type="hidden" :id="formFieldNames[n]">
       </form>
     </div>
   </div>
@@ -199,8 +208,23 @@ const app = new Vue({
   data(){return{
     lightboxIndex: null,
     apartment: {!! json_encode( $apartment ) !!},
+    
+    validating: false,
+    
+    name: 'John Doe',
+    email: 'johndoe@serendipia.com',
+    phone: '3211231234',
+    
+    errors: {},
+    formUrl: '',
+    formFields: null,
+    formFieldNames: ["a","b","c","d","e","f","g","h","i","j","k","l","n"],
+    credentials: []
   }},
   computed:{
+    formFieldsNames(){
+      return this.formFields ? Object.keys(this.formFields) : []
+    },
     pictures(){
       let pics = []
       pics.push( '/img/aptos/separar/APTO_' + this.apartment.type.id  + '.png')
@@ -214,6 +238,35 @@ const app = new Vue({
     asArea(string){
       return string.toString().replace('.', ',')
     }
+  },
+  methods:{
+    validateForm(){
+      let data = {
+        "email": this.email,
+        "phone": this.phone,
+        "name": this.name
+      }
+      let config = {
+        headers: {
+          "X-Frame-Options": "deny"
+        }
+      }
+      this.validating = true
+      axios.post('/validate-checkout-form', data, config).then(response=>{
+        this.formUrl = response.data.data.formUrl
+        this.formFields = response.data.data.order
+        this.credentials = response.data.data.credentials
+        let that = this
+        setTimeout(function(){
+          that.$refs.hiddenForm.submit()
+        },200)
+        
+      },errors=>{
+        this.errors = errors.response.data.errors
+      }).then(()=>{
+        this.validating = false
+      })
+    }
   }
 })
 </script>
@@ -225,6 +278,9 @@ const app = new Vue({
     line-height: 1.57;
     letter-spacing: normal;
     color: #0f0f10;
+  }
+  .form-control.disabled {
+    opacity: .5;
   }
   #terminos-modal .terms-title {
     display: block;
