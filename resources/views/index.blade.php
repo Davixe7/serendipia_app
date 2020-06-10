@@ -85,7 +85,7 @@
         </div>
         <div class="col-md-4">
           <h2>Apartamentos completamente dotados</h2>
-          <p>Diseñados milimetricamente para que tu estadía en casa sea agradable</p>
+          <p>Diseñados milimetricamente para que tu estadía en casa sea agradable.</p>
           <a href="{{ route('explore.renders') }}" class="btn btn-outline btn-outline-success">Explorar apartamentos</a>
         </div>
       </div>
@@ -109,7 +109,7 @@
         </div>
         <div class="col-md-4">
           <h2>Variedad de zonas sociales</h2>
-          <p>Pensadas para que no te falte nada y aproveches el tiempo al máximo</p>
+          <p>Pensadas para que no te falte nada y aproveches el tiempo al máximo.</p>
           <a href="{{ route('shared') }}" class="btn btn-outline btn-outline-success">
             Ver zonas sociales
           </a>
