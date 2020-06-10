@@ -77,7 +77,7 @@ class PaymentController extends Controller
   }
   
   public function checkoutResponse(Request $request){
-    $order = Order::whereReferenceCode( $request->referenceCode )->first();
+    $order = Order::where('reference_code', $request->referenceCode )->first();
     if( $order ){
       $owner = Owner::whereEmail($order->buyer_email)->get();
       $order->update([
@@ -90,7 +90,7 @@ class PaymentController extends Controller
         ]);
       }
     }
-    return view('response', ['data'=>$request]);
+    return view('response', ['data'=>$request->referenceCode]);
   }
   
   public function checkoutConfirm(Request $request){
