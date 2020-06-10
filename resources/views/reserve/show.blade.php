@@ -244,7 +244,8 @@ const app = new Vue({
       let data = {
         "email": this.email,
         "phone": this.phone,
-        "name": this.name
+        "name": this.name,
+        "apartment": this.apartment.id
       }
       let config = {
         headers: {

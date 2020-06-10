@@ -3,18 +3,37 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Apartment;
+use App\Order;
+use App\Owner;
 use Illuminate\Support\Facades\Http;
 use App\Http\Requests\StartWebCheckout as RequestWebCheckout;
 
 class PaymentController extends Controller
 {
   public function validateForm(RequestWebCheckout $request){
+    $apartment = Apartment::findOrFail( $request->apartment );
+    
+    if( !Owner::whereEmail( $request->email )->exists() ){
+      Owner::create([
+        'name'  => $request->name,
+        'email' => $request->email,
+        'phone' => $request->phone,
+      ]);
+    }
+    
     $accountId      = '512321';
     $merchantId     = '508029';
     $apiKey         = '4Vj8eK4rloUd272L48hsrarnUA';
     $referenceCode  = "TestPayU" . time();
     $amount         = 10000000;
     $currency       = "COP";
+    
+    $order = Order::create([
+      'apartment_id' => $apartment->id,
+      'buyer_email'  => $request->email,
+      'reference_code' => $referenceCode
+    ]);
     
     // $apiKey         = env('PAYU_API_KEY');
     // $merchantId     = env('PAYU_MERCHANT_ID');
@@ -35,7 +54,7 @@ class PaymentController extends Controller
         "usuarioId"       => $accountId,
         "refVenta"        => $referenceCode,
         
-        "description"     => "Reservación de apartamento en Serendipia",
+        "description"     => "Reservación de apartamento {$apartment->number} en Serendipia",
         "referenceCode"   => $referenceCode,
         "amount"          => $amount,
         "currency"        => $currency,
@@ -58,6 +77,19 @@ class PaymentController extends Controller
   }
   
   public function checkoutResponse(Request $request){
+    $order = Order::whereReferenceCode( $request->referenceCode )->get();
+    if( $order ){
+      $owner = Owner::whereEmail($order->buyerEmail)->get();
+      $order->update([
+        'status' => $request->transactionStatus
+      ]);
+      if( $request->transactionStatus == 7 ){
+        $order->apartment->update([
+          'owner_id' => $owner->id,
+          'available' => 0
+        ]);
+      }
+    }
     return view('response', ['data'=>$request]);
   }
   
