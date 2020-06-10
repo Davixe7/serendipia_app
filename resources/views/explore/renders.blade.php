@@ -73,11 +73,13 @@ Vue.component('renders-details-box', {
   <div>
     <span class="measure-title">Mobiliario incluido:</span>
     <ul class="apartment-includes">
-      <li>Horno extractor</li>
       <li>Estufa eléctrica</li>
+      <li>Extractor</li>
+      <li>Clóset</li>
       <li>Cama aprox. 1,40 m</li>
-      <li class="hl">Nevera</li>
+      <li>Baño dotado</li>
       <li class="hl">Microondas</li>
+      <li class="hl">Nevera</li>
       <li class="hl">Televisor 42’’</li>
       <li class="hl">Comedor</li>
     </ul>

@@ -106,14 +106,14 @@ const app = new Vue({
       },
         {
         "scene" : "scene_juegos",
-        "name"        : "Salón de juegos",
-        "description" : "¿Una partida de ping-pong? ¿un torneo de futbolito? Nuestro salón de juegos cuenta con una variedad de juegos que podrás disfrutar en cualquier momento del día.",
+        "name"        : "Game Room",
+        "description" : "¿Una partida de ping-pong? Nuestro salón de juegos cuenta con una variedad de juegos que podrás disfrutar en cualquier momento del día.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
         "img"         : "salonjuego@3x.png",
         "slug"        : "salonjuego",
         "included"    : [
-          "Televisor 50’’","Mesa Ping Pong","Mesa Futbolito","Mobiliario","Ambientación del lugar"
+          "Televisor 50’’","Mesa Ping Pong","Mobiliario","Ambientación del lugar"
         ]
       },
       {
