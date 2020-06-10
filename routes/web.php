@@ -69,5 +69,5 @@ Route::get('tipos', function(){
 
 
 Route::post('validate-checkout-form', 'PaymentController@validateForm');
-Route::post('checkout-response', 'PaymentController@checkoutResponse');
+Route::get('checkout-response', 'PaymentController@checkoutResponse');
 Route::post('checkout-confirm', 'PaymentController@checkoutConfirm');
