@@ -78,12 +78,12 @@ class PaymentController extends Controller
   
   public function checkoutResponse(Request $request){
     $order = Order::where('reference_code', $request->referenceCode )->first();
-    if( $order ){
-      $owner = Owner::whereEmail($order->buyer_email)->get();
+    if( $order->id ){
+      $owner = Owner::whereEmail($order->buyer_email)->first();
       $order->update([
-        'status' => $request->transactionStatus
+        'status' => $request->transactionState
       ]);
-      if( $request->transactionStatus == 7 ){
+      if( $request->transactionState == 4 ){
         $order->apartment->update([
           'owner_id' => $owner->id,
           'available' => 0
