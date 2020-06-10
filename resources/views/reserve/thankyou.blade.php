@@ -114,11 +114,11 @@
                   <span class="thankyou-title">
                     ¡Felicitaciones por tu gran inversión!
                   </span>
-                  <p class="thankyou-caption">La reserva en línea de tu nuevo apartamento <b>802</b> fue completada con éxito. Recibirás toda la información detallada en tu correo electrónico.</p>
-                  <button class="btn btn-outline-success d-flex align-items-center">
+                  <p class="thankyou-caption">La reserva en línea de tu nuevo apartamento <b>{{ $apartment->number }}</b> fue completada con éxito. Recibirás toda la información detallada en tu correo electrónico.</p>
+                  <!-- <button class="btn btn-outline-success d-flex align-items-center">
                     <span>Descargar comprobante</span>
                     <span class="arrow-down-green ml-3"></span>
-                  </button>
+                  </button> -->
                 </div>
                 <div class="card-footer">
                   <ul class="apartment-thumbnails">
@@ -135,15 +135,15 @@
                   <div class="measures">
                     <div class="measure">
                       <span class="measure-title">Área construída</span>
-                      <span class="number">18,95 m<sup>2</sup></span>
+                      <span class="number">{{ $apartment->built_area }} m<sup>2</sup></span>
                     </div>
                     <div class="measure">
                       <span class="measure-title">Área privada</span>
-                      <span class="number">16,47 m<sup>2</sup></span>
+                      <span class="number">{{ $apartment->private_area }} m<sup>2</sup></span>
                     </div>
                     <div class="measure">
                       <span class="measure-title">Valor del apartamento</span>
-                      <span class="number">$200’000.000</span>
+                      <span class="number">$ {{ $apartment->apt_value }}</span>
                     </div>
                     <div class="measure">
                       <span class="measure-title">Altura libre</span>

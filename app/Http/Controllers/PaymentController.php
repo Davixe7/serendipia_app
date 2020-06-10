@@ -90,7 +90,7 @@ class PaymentController extends Controller
         ]);
       }
     }
-    return view('response', ['data'=>$order->buyer_email]);
+    return view('reserve.thankyou', ['apartment'=>$order->apartment]);
   }
   
   public function checkoutConfirm(Request $request){
