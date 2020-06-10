@@ -135,11 +135,11 @@
                   <div class="measures">
                     <div class="measure">
                       <span class="measure-title">Área construída</span>
-                      <span class="number">{{ $apartment->built_area }} m<sup>2</sup></span>
+                      <span class="number">{{ $apartment->type->built_area }} m<sup>2</sup></span>
                     </div>
                     <div class="measure">
                       <span class="measure-title">Área privada</span>
-                      <span class="number">{{ $apartment->private_area }} m<sup>2</sup></span>
+                      <span class="number">{{ $apartment->type->private_area }} m<sup>2</sup></span>
                     </div>
                     <div class="measure">
                       <span class="measure-title">Valor del apartamento</span>
