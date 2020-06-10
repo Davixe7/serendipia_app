@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Apartment extends Model
 {
   protected $fillable = [
-    'number', 'floor', 'type', 'initial_quota', 'monthly_quota', 'apt_value', 'finance_value', 'instalment', 'release_date', 'available'
+    'number', 'floor', 'type', 'initial_quota', 'monthly_quota', 'apt_value', 'finance_value', 'instalment', 'release_date', 'available', 'owner_id'
   ];
   
   protected $casts = [
