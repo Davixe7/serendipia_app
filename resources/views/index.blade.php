@@ -84,8 +84,8 @@
           <img src="/img/apartamento-07.jpg" alt="" style="width: 100%;">
         </div>
         <div class="col-md-4">
-          <h2>Apartamentos diseñados milimétricamente para que tu estadía en casa sea agradable</h2>
-          <p>Cada metro cuadrado está pensado para maximizar tu inversión.</p>
+          <h2>Apartamentos completamente dotados</h2>
+          <p>Diseñados milimetricamente para que tu estadía en casa sea agradable</p>
           <a href="{{ route('explore.renders') }}" class="btn btn-outline btn-outline-success">Explorar apartamentos</a>
         </div>
       </div>
@@ -108,8 +108,8 @@
           </button>
         </div>
         <div class="col-md-4">
-          <h2>Zonas sociales pensadas para que no te falte nada y tengas una vida productiva</h2>
-          <p>Sabemos que hoy en día el tiempo en casa es lo más importante.</p>
+          <h2>Variedad de zonas sociales</h2>
+          <p>Pensadas para que no te falte nada y aproveches el tiempo al máximo</p>
           <a href="{{ route('shared') }}" class="btn btn-outline btn-outline-success">
             Ver zonas sociales
           </a>

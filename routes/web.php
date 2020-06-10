@@ -68,6 +68,10 @@ Route::get('tipos', function(){
 });
 
 
+Route::get('rejected', function(){
+  return view('reserve.rejected', ['apartment'=>App\Apartment::find(1)]);
+});
+
 Route::post('validate-checkout-form', 'PaymentController@validateForm');
 Route::get('checkout-response', 'PaymentController@checkoutResponse');
 Route::post('checkout-confirm', 'PaymentController@checkoutConfirm');
