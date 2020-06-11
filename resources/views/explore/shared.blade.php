@@ -107,7 +107,7 @@ const app = new Vue({
         {
         "scene" : "scene_juegos",
         "name"        : "Game Room",
-        "description" : "¿Una partida de ping-pong? Nuestro salón de juegos cuenta con una variedad de juegos que podrás disfrutar en cualquier momento del día.",
+        "description" : "¿Una partida de ping-pong? Nuestro game room cuenta con una variedad de juegos que podrás disfrutar en cualquier momento del día.",
         "location"    : "Piso 1",
         "freeHeight"  : "3,50 m",
         "img"         : "salonjuego@3x.png",
