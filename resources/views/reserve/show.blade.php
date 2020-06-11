@@ -211,9 +211,9 @@ const app = new Vue({
     
     validating: false,
     
-    name: 'John Doe',
-    email: 'johndoe@serendipia.com',
-    phone: '3211231234',
+    name: '',
+    email: '',
+    phone: '',
     
     errors: {},
     formUrl: '',
