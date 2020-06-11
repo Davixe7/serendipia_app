@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Apartment;
 use App\Order;
 use App\Owner;
@@ -94,6 +95,7 @@ class PaymentController extends Controller
   }
   
   public function checkoutConfirm(Request $request){
+    Storage::append('file.log', $request->state_pol . ' ' . $request->reference_sale);
     $order = Order::where('reference_code', $request->reference_sale )->first();
     if( $order->id ){
       $order->update([
