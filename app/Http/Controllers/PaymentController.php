@@ -13,6 +13,9 @@ class PaymentController extends Controller
 {
   public function validateForm(RequestWebCheckout $request){
     $apartment = Apartment::findOrFail( $request->apartment );
+    if( !$apartment->available || $apartment->owner_id != null ){
+      return redirect()->route('reserve.selectApartment');
+    }
     
     if( !Owner::whereEmail( $request->email )->exists() ){
       Owner::create([
@@ -30,18 +33,17 @@ class PaymentController extends Controller
     $currency       = "COP";
     
     $order = Order::create([
-      'apartment_id' => $apartment->id,
-      'buyer_email'  => $request->email,
+      'apartment_id'   => $apartment->id,
+      'buyer_email'    => $request->email,
       'reference_code' => $referenceCode
     ]);
     
-    // $apiKey         = env('PAYU_API_KEY');
-    // $merchantId     = env('PAYU_MERCHANT_ID');
     // $accountId      = env('PAYU_ACCOUNT_ID');
+    // $merchantId     = env('PAYU_MERCHANT_ID');
+    // $apiKey         = env('PAYU_API_KEY');
     // $referenceCode  = "R" . time();
     // $amount         = 10000000;
     // $currency       = "COP";
-    
     
     $data = [
       "formUrl" => "https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu",

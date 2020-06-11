@@ -109,11 +109,6 @@ const app = new Vue({
   .btn-reserve-yours {
     display: none !important;
   }
-  .wa-me {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;;
-  }
   @media(min-width: 769px){
     .wa-me {
       position: relative;

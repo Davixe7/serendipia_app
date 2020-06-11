@@ -15,6 +15,9 @@ class ApartmentController extends Controller
      */
     public function show(Apartment $apartment)
     {
+      if( !$apartment->available || $apartment->owner_id != null ){
+        return redirect()->route('reserve.selectFloor');
+      }
       return view('reserve.show',
       [
         'page_title' => 'Separa el Tuyo',
