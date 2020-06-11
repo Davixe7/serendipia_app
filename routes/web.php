@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/sendmail', 'OrderController@index');
+
 Route::get('/', function(){
   return view('index');
 });

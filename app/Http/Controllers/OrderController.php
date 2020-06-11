@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Order;
+use Mail;
+use App\Mail\OrderDetails;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -14,7 +16,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+      Mail::to('johndoe@serendipiaflats.com')->send(new OrderDetails);
+      return 'A message has been sent to Mailtrap!';
     }
 
     /**
