@@ -32,6 +32,7 @@
     </div>
   </div>
   <vue-cool-lightbox 
+    :slideshow="false"
     :items="pictures" 
     :index="lightboxIndex"
     @close="lightboxIndex = null">

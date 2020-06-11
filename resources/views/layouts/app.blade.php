@@ -30,8 +30,8 @@
     </main>
     @yield('footer')
   </div>
-  <!-- <script src="https://unpkg.com/vue-cool-lightbox"></script>
-  <link rel="stylesheet" media="all" href="https://unpkg.com/vue-cool-lightbox/dist/vue-cool-lightbox.min.css" /> -->
+  <script src="https://unpkg.com/vue-cool-lightbox"></script>
+  <link rel="stylesheet" media="all" href="https://unpkg.com/vue-cool-lightbox/dist/vue-cool-lightbox.min.css" />
   <script src="{{ asset('js/app.js') }}"></script>
   @yield('script')
 </body>
