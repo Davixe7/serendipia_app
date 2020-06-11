@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use App\Apartment;
 use App\Order;
 use App\Owner;
-use Illuminate\Support\Facades\Http;
+use App\Mail\OrderDetails;
 use App\Http\Requests\StartWebCheckout as RequestWebCheckout;
 
 class PaymentController extends Controller
