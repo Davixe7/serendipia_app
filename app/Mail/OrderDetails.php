@@ -28,7 +28,7 @@ class OrderDetails extends Mailable
      */
     public function build()
     {
-        return $this->from('administracion@serendipiaflats.com')
+        return $this->from('admin@espartadevs.co.ve')
                     ->subject('Orden procesada')
                     ->view('mails.order-details');
     }

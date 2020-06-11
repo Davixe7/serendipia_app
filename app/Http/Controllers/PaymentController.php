@@ -81,33 +81,33 @@ class PaymentController extends Controller
   public function checkoutResponse(Request $request){
     $order = Order::where('reference_code', $request->referenceCode )->first();
     if( $order->id ){
-      $owner = Owner::whereEmail( $order->buyer_email )->first();
       $order->update([
         'status' => $request->transactionState
       ]);
       if( $request->transactionState == 4 ){
+        return view('reserve.thankyou', ['apartment'=>$order->apartment]);
+      }
+      else {
+        return view('reserve.rejected', ['apartment'=>$order->apartment]);
+      }
+    }
+  }
+  
+  public function checkoutConfirm(Request $request){
+    $order = Order::where('reference_code', $request->referenceCode )->first();
+    if( $order->id ){
+      $order->update([
+        'status' => $request->transactionState
+      ]);
+      
+      if( $request->transactionState == 4 ){
+        $owner = Owner::whereEmail( $order->buyer_email )->first();
         $order->apartment->update([
           'owner_id' => $owner->id,
           'available' => 0
         ]);
+        Mail::to( $owner->email )->send(new OrderDetails);
       }
-    }
-    return view('reserve.thankyou', ['apartment'=>$order->apartment]);
-  }
-  
-  public function checkoutConfirm(Request $request){
-    return view('response', ['data'=>$request]);
-  }
-  
-  public function checkoutConfirmx(Request $request){
-    $owner = App\Owner::whereEmail($request->buyerEmail)->get();
-    if( $owner ){
-      
-    }
-    else{
-      App\Owner::create([
-        'email' => $request->buyerEmail
-      ]);
     }
   }
 }
