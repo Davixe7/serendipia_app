@@ -94,13 +94,13 @@ class PaymentController extends Controller
   }
   
   public function checkoutConfirm(Request $request){
-    $order = Order::where('reference_code', $request->referenceCode )->first();
+    $order = Order::where('reference_code', $request->reference_sale )->first();
     if( $order->id ){
       $order->update([
-        'status' => $request->transactionState
+        'status' => $request->state_pol
       ]);
       
-      if( $request->transactionState == 4 ){
+      if( $request->state_pol == 4 ){
         $owner = Owner::whereEmail( $order->buyer_email )->first();
         $order->apartment->update([
           'owner_id' => $owner->id,
