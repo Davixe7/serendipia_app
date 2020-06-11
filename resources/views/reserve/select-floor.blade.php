@@ -89,7 +89,7 @@ const app = new Vue({
   .wa-me {
     position: fixed;
     right: 25px;
-    bottom: 50px;
+    bottom: 25px;
   }
   @media(min-width: 769px){
     .wa-me {
